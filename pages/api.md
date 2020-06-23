@@ -13,7 +13,7 @@ slate: true
 excerpt: Sketch JavaScript API reference
 ---
 
-{% assign references = site.api-references | where_exp:"item", "item.hidden != true" | sort: 'order' %} {% for ref in references %}
+{% assign references = site.api | where_exp:"item", "item.hidden != true" | sort: 'order' %} {% for ref in references %}
 
 <section markdown="1">
 # {{ref.title}}

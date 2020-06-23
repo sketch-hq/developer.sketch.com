@@ -44,11 +44,11 @@ collections:
   actions:
     output: true
     permalink: /reference/action/:path/
+  api:
+    output: false
   posts:
     output: true
     permalink: /blog/:path/
-  api-references:
-    output: false
 
 # Defaults
 defaults:

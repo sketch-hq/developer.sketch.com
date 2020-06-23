@@ -1,3 +1,21 @@
+/*
+
+## Getting a list of all the actions:
+
+###  Real Actions
+
+They are extracted from `MSDocument+AllActions.m`. A way to automate the extraction is running this on Sketch's Run Plugin panel, and pasting the result here, replacing the contents of `const actions = [ … ]`:
+
+```
+var actions = context.document.actionClasses().slice().map(action => action.toString().replace(/^MS/,"").replace(/Action$/,"")).sort()
+log(JSON.stringify(actions, null, 4))
+```
+
+### Fake Actions
+
+`[MSActionController performFakeActionWithID:context:block]` is used for "fake" actions (i.e: those we want to generate manually from Sketch's code). To get a list of those, we need to search for `performFakeActionWithID` in Xcode.
+*/
+
 const fs = require('fs')
 const path = require('path')
 

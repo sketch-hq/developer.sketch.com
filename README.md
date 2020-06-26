@@ -14,8 +14,20 @@ Pull request and merge to the `main` branch to deploy to Netlify.
 
 ### Running locally
 
-Avoid dealing with Ruby on your local operating system and serve the site locally with [Docker](https://docs.docker.com/get-docker/).
+Avoid dealing with Ruby on your local operating system and interact with the site locally with [Docker](https://docs.docker.com/get-docker/).
+
+#### Serve
+
+Builds the site and serves it on `http://0.0.0.0:4000`.
 
 ```
 ./serve.sh
+```
+
+#### Build
+
+Builds the site to the `_site` folder.
+
+```
+./build.sh
 ```

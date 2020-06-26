@@ -49,3 +49,4 @@ By default a plugin command's JavaScript context is destroyed after successful e
 - [Plugin manifest](/plugins/plugin-manifest)
 - [JavaScript environment](/plugins/javascript-environment)
 - [Internal API](/plugins/internal-api)
+- [SketchAPI Repository](https://github.com/sketch-hq/SketchAPI)

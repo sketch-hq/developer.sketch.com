@@ -7,7 +7,7 @@ order: 1
 excerpt: Sketch documents are stored as ZIP archives containing JSON encoded data
 ---
 
-Hello. Sketch documents are stored as ZIP archives containing JSON encoded data. The file format was originally [introduced in Sketch 43](https://sketchplugins.com/d/87-new-file-format-in-sketch-43) and allows for better third-party integration. Generate Sketch documents dynamically, read or modify them without opening them in Sketch.
+Sketch documents are stored as ZIP archives containing JSON encoded data. The file format was originally [introduced in Sketch 43](https://sketchplugins.com/d/87-new-file-format-in-sketch-43) and allows for better third-party integration. Generate Sketch documents dynamically, read or modify them without opening them in Sketch.
 
 The JSON files within the archive describe the document data and contain a number of binary assets such as bitmap images and document preview. To unarchive a document on the command line use `unzip`.
 

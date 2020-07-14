@@ -78,6 +78,12 @@ web
 android
 ```
 
+## Updating Published Assistants
+
+Sketch does not check if there are newer versions of your published Assistant on Npm, so it won't automatically prompt users to update Assistants added to documents.
+
+If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to the document. Either via the _Assistants > Add from URL_ menu option, or add the Assistant again from [sketch.com](https://www.sketch.com).
+
 ## Self-hosting your Assistant
 
 There is no hard requirement that your Assistant is hosted on Npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, then it can added to Sketch documents and shared.

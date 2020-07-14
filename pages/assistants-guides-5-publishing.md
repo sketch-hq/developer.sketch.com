@@ -7,17 +7,16 @@ order: 105
 excerpt: Publishing Sketch Assistants.
 ---
 
-Sketch Assistants are ordinary JavaScript packages and as such can be published to [Npm](https://www.npmjs.com), the JavaScript package manager, in a few simple steps.
+Publish your Assistant to allow Sketch to automatically fetch it for users when they open a document with it added.
 
-In practice, publishing means hosting your Assistant's package on a publically accessible URL. Npm isn't the only way to publically host your Assistant package but it is fast, easy and free so forms the basis of this guide.
+Published Assistants can also be listed on the Sketch website. We recommend publishing to [Npm](https://www.npmjs.com), but self-hosting is also an option.
 
-Once published in this way your Assistant becomes fully shareable - this means that other Sketch users will be automatically prompted to download it when they open a Sketch document that has your Assistant added. Additionally, published Assistants will be automatically installed when processing documents with the [CLI](/assistants/cli).
+Once you've created an Assistant package, for example by generating an Assistant from our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository or following the [Writing a rule](/assistants/writing-a-rule) guide, you're ready to publish.
 
 ## Publishing to Npm
 
-Once you've created an Assistant package, for example by generating an Assistant from our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository or following the [Writing a rule](/assistants/writing-a-rule) guide, you're ready to publish it to Npm.
+Review the Npm [documentation](https://docs.npmjs.com/packages-and-modules) to familiarize yourself about publishing packages, but read on for a quick guide.
 
-1. Review the Npm [documentation](https://docs.npmjs.com/packages-and-modules) to familiarize yourself about publishing packages, but read on for a quick guide.
 1. Ensure you have an npm account and are logged-in to Npm on the command line via `npm login`.
 1. Update your Assistant code as needed, implement any rules you want to and ensure any tests are passing.
 1. Ensure the `name` field in package.json has been set to a valid, unique npm package name.
@@ -35,11 +34,29 @@ npm info <your-package-name>
 
 Add your Npm Assistant to a Sketch document by copy and pasting the `tarball` value from the above output and adding it to a Sketch document via the _Assistants > Add from URL_ menu option.
 
-A Sketch document configured with an Npm Assistant is truly portable - other users will be prompted to install the exact same Assistant package when they open the document.
+A Sketch document configured with a published Assistant is truly portable - other users will be prompted to install the exact same Assistant package when they open the document.
+
+## Self-hosting
+
+There is no hard requirement that your Assistant is published to Npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, then it can added to Sketch documents and shared.
+
+Running the following command in an Assistant generated with our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository will yield a tarball file in the current working directory.
+
+```
+npm run package-tarball
+```
+
+Once this tarball is hosted somewhere of your choosing, then add the Assistant to a Sketch document via the _Assistants > Add from URL_ option.
+
+## Updating published Assistants
+
+Sketch does not check if there are newer versions of your published Assistant on Npm, so it won't automatically prompt users to update Assistants added to documents.
+
+If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to the document. Either via the _Assistants > Add from URL_ menu option, or add the Assistant again from [sketch.com](https://www.sketch.com).
 
 ## Listing on [sketch.com](https://www.sketch.com)
 
-Once published to Npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this include:
+Once published to Npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this are:
 
 - A publically hosted homepage for your Assistant on [sketch.com](https://www.sketch.com).
 - Your Assistant will become discoverable to a wider audience.
@@ -78,22 +95,3 @@ web
 android
 ```
 
-## Updating Published Assistants
-
-Sketch does not check if there are newer versions of your published Assistant on Npm, so it won't automatically prompt users to update Assistants added to documents.
-
-If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to the document. Either via the _Assistants > Add from URL_ menu option, or add the Assistant again from [sketch.com](https://www.sketch.com).
-
-## Self-hosting your Assistant
-
-There is no hard requirement that your Assistant is hosted on Npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, then it can added to Sketch documents and shared.
-
-Reasons for self-hosting could include hosting a private Assistant within a company intranet, VPN or simply on an unguessable URL.
-
-Running the following command in an Assistant generated with our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository will yield a tarball file in the current working directory.
-
-```
-npm run package-tarball
-```
-
-Once this tarball is hosted somewhere of your choosing, then add the Assistant to a Sketch document via the _Assistants > Add from URL_ option.

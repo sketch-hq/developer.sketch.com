@@ -37,7 +37,7 @@ If that reports `12.x.x` or greater you're good to go. If not, you have a few op
 
 You'll also need an editor that handles JavaScript projects nicely. We recommend [Visual Studio Code](https://visualstudio.microsoft.com/downloads/).
 
-## Getting started
+## Create your first Assistant
 
 We've created the [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository to help you get going as quickly as possible. This is a minimal Sketch Assistant project with everything properly configured and ready-to-go.
 

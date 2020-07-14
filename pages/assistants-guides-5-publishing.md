@@ -9,11 +9,11 @@ excerpt: Publishing Sketch Assistants.
 
 Publish your Assistant to allow Sketch to automatically fetch it for users when they open a document with it added.
 
-Published Assistants can also be listed on the Sketch website. We recommend publishing to [Npm](https://www.npmjs.com), but self-hosting is also an option.
+Published Assistants can also be listed on the Sketch website. We recommend publishing to [npm](https://www.npmjs.com), but self-hosting is also an option.
 
 Once you've created an Assistant package, perhaps after following our [Getting started](/assistants/getting-started) and [Writing a rule](/assistants/writing-a-rule) guides, you're ready to publish.
 
-## Publishing to Npm
+## Publishing to npm
 
 Below is a list of steps to publish your Assistant to npm. For more information on publishing JavaScript packages see the [documentation](https://docs.npmjs.com/packages-and-modules).
 
@@ -39,7 +39,7 @@ A Sketch document configured with a published Assistant is truly portable - othe
 
 ## Self-hosting
 
-There is no hard requirement that your Assistant is published to Npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, it can be added to Sketch documents and shared.
+There is no hard requirement that your Assistant is published to npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, it can be added to Sketch documents and shared.
 
 Running the following command in an Assistant generated with our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository will yield a tarball file in the current working directory.
 
@@ -57,7 +57,7 @@ If there's a newer version of an Assistant available, and you want to update a d
 
 ## Listing on [sketch.com](https://www.sketch.com)
 
-Once published to Npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this are:
+Once published to npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this are:
 
 - A publically hosted homepage for your Assistant on [sketch.com](https://www.sketch.com), automatically generated from your Assistant's README and `package.json` data.
 - Your Assistant will become discoverable to a wider audience.

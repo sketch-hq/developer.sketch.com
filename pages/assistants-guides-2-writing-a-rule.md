@@ -7,7 +7,7 @@ order: 101
 excerpt: Writing a Sketch Assistant rule.
 ---
 
-This guide shows how to create an Assistant rule that checks the contents of Text Layers to make sure they don’t include "Lorem Ipsum" placeholder text. It finishes describing how to evolve the rule to detect any string using Assistant Configurations.
+This guide shows how to create an Assistant rule that checks the contents of Text Layers to make sure they don’t include "Lorem Ipsum" placeholder text. It finishes describing how to evolve the rule to disallow any string using Assistant configuration.
 
 > 💡Make sure you've already followed the [Getting Started](/assistants/getting-started) guide. You'll need a working local Assistant project that you can edit, rebuild and see the resulting changes in Sketch if you want to follow along with this guide.
 
@@ -26,7 +26,7 @@ const textNoLoremIpsum: RuleDefinition = {
   },
   name: 'sketch-assistant-template/text-no-lorem-ipsum',
   title: 'Text should not contain lorem ipsum',
-  description: 'Reports a violation when text layers contain lorem ipsum filler',
+  description: 'Reports a violation when text layers contain lorem ipsum placeholder',
 }
 
 const assistant: AssistantPackage = async () => {
@@ -48,7 +48,7 @@ export default assistant
 
 A few points to note:
 
-- A rule's `name` is its unique identifier in the Assistant's ecosystem, so by convention we prefix rule names with their parent Assistant's name separated by a `/`.
+- A rule's `name` is its unique identifier in the Assistants ecosystem, so by convention we prefix rule names with their parent Assistant's name separated by a `/`.
 - Rules are added to an Assistant package by including them in its `rules` array.
 - Rules are not active by default, they have to be explicitly turned on in the Assistant's configuration object.
 

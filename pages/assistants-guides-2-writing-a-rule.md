@@ -54,7 +54,7 @@ A few points to note:
 
 ## Implement rule logic
 
-Rule logic is implemented in the `rule` function, that's part of the rule definition defined above. So far we've just defined an empty anonymous async function:
+Rule logic is implemented in the function set as the `rule` property in the rule definition object. So far we've just defined an empty anonymous async function:
 
 ```typescript
 async (context) => {

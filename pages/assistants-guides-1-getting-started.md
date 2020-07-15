@@ -14,7 +14,7 @@ Every Sketch Assistant is a small JavaScript project, so you'll need a [NodeJS](
 ### Skills
 
 - You'll need some command line skills
-- Some familiarlity with Git and GitHub
+- Some familiarity with Git and GitHub
 - JavaScript knowledge (and ideally some exposure to TypeScript, although this isn't essential)
 
 ### NodeJS
@@ -44,8 +44,8 @@ We've created the [Sketch Assistant Template](https://github.com/sketch-hq/sketc
 Follow the steps below to create your first Assistant project, build it locally and add it to a Sketch document
 
 1. Click [here](https://github.com/sketch-hq/sketch-assistant-template/generate) to generate your own Assistant repository on GitHub based on our template
-1. Follow the instructions on GitHub to clone your new repository to your machine
-1. Once cloned, `cd` into your new repositoiry folder in your terminal and run,
+1. Follow the [instructions](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) on GitHub to clone your new repository to your machine
+1. Once cloned, `cd` into your new repository folder in your terminal and run,
    ```
    npm install
    ```
@@ -59,5 +59,11 @@ Follow the steps below to create your first Assistant project, build it locally 
 Try opening your Assistant project in Visual Studio Code, and exploring the project folder. Both the Assistant and its _Hello World_ rule are defined in the `src/index.ts` file.
 
 Experiment with making minor changes to the rule, for example adjusting its `title` value to a new string. Each time you make a change re-run `npm run package-tarball` to see your changes in Sketch.
+
+At this point you may wish to name your Assistant properly, and add some descriptive metadata.
+
+1. Find and replace all instances of the `sketch-assistant-template` string with the name of your new Assistant project. Name your Assistant as you would an npm package, i.e. all lower case, no spaces.
+1. Update the `title` and `description` values in the `sketch-assistant` object property in `package.json`.
+1. Update the `homepage` value in `package.json` - this is likely just the GitHub repository page for now. Sketch will direct users to this page to find out more about your Assistant.
 
 > 👉 Continue on to [Writing a rule](/assistants/writing-a-rule) if you're ready to learn more.

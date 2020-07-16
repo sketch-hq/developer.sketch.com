@@ -15,7 +15,7 @@ There are typically three reasons for extending an Assistant:
 2. Tweak the configuration for a particular rule of an existing Assistant.
 3. Disable one or more rules of an existing Assistant.
 
-> 💡Only write custom rules when you absolutely have to. And if you do, consider making your own rules [configurable](/assistants/writing-a-rule#making-a-configurable-rule) so others can re-purpose them in their Assistants.
+> 💡 Only write custom rules when you absolutely have to. And if you do, consider making your own rules [configurable](/assistants/writing-a-rule#making-a-configurable-rule) so others can re-purpose them in their Assistants.
 
 ## Overview
 

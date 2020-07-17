@@ -125,3 +125,7 @@ To find out more about sharing your own libraries, see:
 
 - [Sharing a Library](https://www.sketch.com/docs/libraries/#sharing-libraries) Sketch documentation
 - [Appcast documentation](https://sparkle-project.org/documentation/)
+
+## Add an Assistant to the current document
+
+This is [documented](/assistants/add-button) in the Sketch Assistants section.

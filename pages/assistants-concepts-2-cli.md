@@ -7,4 +7,4 @@ order: 202
 excerpt: Run Sketch Assistants on the command-line.
 ---
 
-TODO
+Coming soon.

@@ -1,15 +1,15 @@
 ---
-title: Assistant Add-button
+title: Add-Assistant button
 section: assistants
 permalink: /assistants/add-button
 chapter: Concepts
 order: 201
-excerpt: Sketch Assistants add buttons.
+excerpt: Add-Assistants buttons.
 ---
 
 Sketch Assistants [listed on sketch.com](/assistants/publishing#listing-on-sketchcom) feature an _Add Assistant_ button that automatically adds the latest version of an Assistant to the currently open Sketch document. You're free to create _Add Assistant_ buttons on your own websites and documentation pages too.
 
-The buttons work by opening a url using the `sketch://` protocol and in the following format,
+The buttons work by opening a url using the `sketch://` protocol in the following format,
 
 ```
 sketch://add-assistant?url=<tarball-url>

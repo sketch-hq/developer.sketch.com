@@ -59,14 +59,14 @@ If there's a newer version of an Assistant available, and you want to update a d
 
 Once published to npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this are:
 
-- A publically hosted homepage for your Assistant on [sketch.com](https://www.sketch.com), automatically generated from your Assistant's README and `package.json` data.
+- A publicly hosted homepage for your Assistant on [sketch.com](https://www.sketch.com), automatically generated from your Assistant's README and `package.json` data.
 - Your Assistant will become discoverable to a wider audience.
 - The homepage will include a "Add to Sketch" button that will open Sketch and add the latest version of your Assistant to the current document. Read more about this in the [One-click add button](/assistants/one-click-add) documentation.
 
 ### Requirements
 
 The following requirements must be met to get your Assistant listed.
-1. Published publically to npm
+1. Published publicly to npm
 1. Assistant's `package.json` must contain:
     1. Version number, must be `1.0.0` or greater
     1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`

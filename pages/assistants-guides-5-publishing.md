@@ -53,7 +53,7 @@ Once the resulting `.tgz` archive is uploaded, add the Assistant to a Sketch doc
 
 Sketch does not check if there are newer versions of your published Assistant, so it won't automatically prompt users to update Assistants added to documents.
 
-If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to that document. Either via the _Assistants > Add from URL_ menu option, or add the Assistant again from [sketch.com](https://www.sketch.com).
+If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to that document. Either via the ⚙️ › _Add from Archive…_ option within the _Manage Assistants…_ sheet for your document, or add the Assistant again from [sketch.com](https://www.sketch.com).
 
 ## Listing on [sketch.com](https://www.sketch.com)
 

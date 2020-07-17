@@ -54,7 +54,7 @@ Follow the steps below to create your first Assistant project, build it locally 
    npm run package-tarball
    ```
    This will build a file called `sketch-assistant-template-1.0.0.tgz` to the current folder - this is your Assistant packaged as a tarball, ready to be used in Sketch!
-1. Open or create a document in Sketch, and add this file to it via the _Assistants > Add from disk_ menu option. You should see a result from a _Hello World_ rule in the Assistants panel 🎉
+1. Open or create a document in Sketch, and add this file to it via the ⚙️ › _Add from Archive…_ option within the _Manage Assistants…_ sheet for your document. You should see a result from a _Hello World_ rule in the Assistants panel 🎉
 
 Try opening your Assistant project in Visual Studio Code, and exploring the project folder. Both the Assistant and its _Hello World_ rule are defined in the `src/index.ts` file.
 

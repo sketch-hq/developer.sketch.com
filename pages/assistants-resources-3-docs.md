@@ -4,5 +4,5 @@ section: assistants
 chapter: Resources
 redirect_from: /assistants/resources/support-docs
 redirect_to: https://www.sketch.com/docs/assistants/
-order: 303
+order: 403
 ---

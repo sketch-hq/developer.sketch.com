@@ -66,12 +66,14 @@ Once published to npm you can opt-in to having your Assistant listed on [sketch.
 ### Requirements
 
 The following requirements must be met to get your Assistant listed.
+
 1. Published publicly to npm
 1. Assistant's `package.json` must contain:
     1. Version number, must be `1.0.0` or greater
     1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`
     1. Metadata object `sketch-assistant`, with `title`, `description` and (optionally) `icon`
-    1. `sketch` string property pointing to a built, single-file bundle of your Assistant
+    1. `sketch` string pointing to a built, single-file bundle of your Assistant
+    1. [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string
 
 > 💡 Assistants created via our [Getting started](/assistants/getting-started) guide are already fully set up.
 

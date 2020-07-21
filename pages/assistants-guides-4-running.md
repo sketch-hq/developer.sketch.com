@@ -43,15 +43,7 @@ There are a number of test helper methods available in [`@sketch-hq/sketch-assis
 
 ## CLI
 
-The [Assistants CLI](https://github.com/sketch-hq/sketch-assistants/tree/main/packages/cli) can be used to gather Assistant results from Sketch documents entirely on the command line.
-
-It's primary purpose is to run the Assistants that have been configured in the file by the Sketch application, although it can also invoke custom Assistants against documents too.
-
-```sh
-sketch-assistants "./path/to/file.sketch"
-```
-
-Read more about the CLI on its [README](https://github.com/sketch-hq/sketch-assistants/tree/main/packages/cli).
+The [Assistants CLI](/assistants/cli) can be used to gather Assistant results from Sketch documents entirely on the command line.
 
 ## Using Sketch Assistant Utils
 

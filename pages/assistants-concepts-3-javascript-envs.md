@@ -32,10 +32,8 @@ If you're curious about exploring the environment made available by JavaScriptCo
 /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Helpers/jsc
 ```
 
-## Node
+## Node.js
 
-In Node the picture is much more straightforward, since in every important way Assistants are standard JavaScript projects.
+Assistants are standard JavaScript packages. Aside from the extra step of compiling TypeScript, our [template](https://github.com/sketch-hq/sketch-assistant-template) builds an ordinary Node.js package alongside the Sketch bundle, exposing a CommonJS entrypoint at the `main` property in package.json.
 
-Aside from the extra step of compiling TypeScript, our [template](https://github.com/sketch-hq/sketch-assistant-template) builds an ordinary Node package alongside the Sketch bundle, exposing a CommonJS entrypoint at the `main` property in package.json.
-
-Such Assistants have the full power of Node at their disposal, but remember that if you make use of any of Node's native modules and I/O functionality then your Assistant won't work in Sketch.
+Such Assistants have the full power of Node.js at their disposal, but remember that if you make use of any of native Node.js modules and I/O functionality then your Assistant will be incompatible with JavaScriptCore and won't work in Sketch.

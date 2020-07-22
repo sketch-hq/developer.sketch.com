@@ -13,13 +13,13 @@ Following is a detailed overview on each environment's capabilities, limitations
 
 ## Sketch JavaScriptCore
 
-Assistants in Sketch run in [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore).
+Assistants in Sketch run in [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore), the same JavaScript engine powering Safari – fast and supporting many modern JavaScript language features.
 
-JavaScriptCore is the same JavaScript engine used in Safari, so its fast and supports many modern JavaScript language features. It does however have the following important limitations:
+It does however have the following important limitations:
 
-- Outside of Safari, JavaScriptCore lacks any browser APIs.
-- Native Node modules are not available.
-- There is no module system (either CommonJS or ESM).
+- No browser APIs
+- Native Node.js modules are not available
+- Module systems such as CommonJS and ESM are unsupported
 
 These limitations have the following knock-on effects to consider while developing cross-platform Assistants:
 

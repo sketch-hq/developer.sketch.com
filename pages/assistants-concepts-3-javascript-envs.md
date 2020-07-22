@@ -7,9 +7,9 @@ order: 202
 excerpt: Sketch Assistants JavaScript environments.
 ---
 
-Sketch Assistants are cross-platform, meaning they work in Sketch and Node.
+Sketch Assistants are cross-platform, working in both Sketch and Node.js environments. Assistants based on the [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) work cross-platform already.
 
-Each environment comes with its own capabilities, limitations and build requirements. If you based your Assistant project on our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) then you're already building a cross-platform Assistant, but continue reading for an overview.
+Following is a detailed overview on each environment's capabilities, limitations and build requirements.
 
 ## Sketch JavaScriptCore
 

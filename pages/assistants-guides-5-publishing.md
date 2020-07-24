@@ -69,7 +69,7 @@ The following requirements must be met to get your Assistant listed.
 1. Published publicly to npm
 1. Assistant's `package.json` must contain:
    1. Version number, must be `1.0.0` or greater
-   1. A [homepage](https://docs.npmjs.com/files/package.json#homepage) value
+   1. A [homepage](https://docs.npmjs.com/files/package.json#homepage) url value
    1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`
    1. Metadata object `sketch-assistant`, with `title`, `description` and (optionally) `icon`
    1. `sketch` string pointing to a built, single-file bundle of your Assistant
@@ -80,8 +80,8 @@ The following requirements must be met to get your Assistant listed.
 ### Best practices
 
 - Don't include the `title` and `description` used in `package.json` as the first items on your README file.
-- Document your rule and configuration choices in the README - find out more about this via the [Documenting Assistants](/assistants/documenting) page.
-- Consider assigning your Assistant one or more category [keywords](https://docs.npmjs.com/files/package.json#keywords) to take advantage of future improvements to Assistant discoverability:
+- Document your rule and configuration choices both in your Assistant definitions in code and their README files - find out more about this on our [Rules and report items](/assistants/rules-and-reports) page.
+- Consider assigning your Assistant one or more of the below category [keywords](https://docs.npmjs.com/files/package.json#keywords) to take advantage of future improvements to Assistant discoverability. The first of these keywords encountered in the array will be considered your Assistant's primary category.
   - `guidelines`
   - `organization`
   - `accessibility`

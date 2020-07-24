@@ -24,8 +24,7 @@ Below is a list of steps to publish your Assistant to npm. For more information 
 1. Ensure the `name` field in package.json has been set to a valid, unique npm package name.
 1. Ensure the `version` field in package.json is updated to reflect the version you want to publish.
 1. Run the build process for your Assistant.
-1. Run `npm publish`.
-Your Assistant package should now be live 🎉
+1. Run `npm publish`. Your Assistant package should now be live 🎉
 
 To confirm the package has been published successfully, request the metadata running the following command:
 
@@ -69,11 +68,12 @@ The following requirements must be met to get your Assistant listed.
 
 1. Published publicly to npm
 1. Assistant's `package.json` must contain:
-    1. Version number, must be `1.0.0` or greater
-    1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`
-    1. Metadata object `sketch-assistant`, with `title`, `description` and (optionally) `icon`
-    1. `sketch` string pointing to a built, single-file bundle of your Assistant
-    1. [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string
+   1. Version number, must be `1.0.0` or greater
+   1. A [homepage](https://docs.npmjs.com/files/package.json#homepage) value
+   1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`
+   1. Metadata object `sketch-assistant`, with `title`, `description` and (optionally) `icon`
+   1. `sketch` string pointing to a built, single-file bundle of your Assistant
+   1. [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string
 
 > 💡 Assistants created via our [Getting started](/assistants/getting-started) guide are already fully set up.
 

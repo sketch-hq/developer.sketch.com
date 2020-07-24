@@ -59,10 +59,12 @@ When [publishing](/assistants/publishing) your Assistant we advise you set a `ho
 
 Sketch will direct users to the homepage when they click to find out more about an Assistant or an individual rule from Sketch, so its a great place to expand on your rationale as well as detailing rule options.
 
-When clicking-through from a rule Sketch will append the rule `name` to the homepage url, allowing users to deep-link to rule-specific documentation if present.
+When clicking-through from a rule Sketch will append the rule `name` to the homepage url a fragment, allowing users to deep-link to rule-specific documentation if present on the page.
+
+Example click-through url with a rule named `@sketch-hq/sketch-core-assistant/groups-max-layers`, and a homepage url of `https://www.example.com/`:
 
 ```
-<homepage-url>#<rule-name>
+https://www.example.com/#@sketch-hq/sketch-core-assistant/groups-max-layers
 ```
 
 ## Throwing JavaScript errors

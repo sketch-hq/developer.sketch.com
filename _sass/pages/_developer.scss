@@ -110,3 +110,20 @@ article.post header {
     display: none;
   }
 }
+
+// Content specfic styling
+// -----------------------
+//
+// Assistants publishing checklist:
+
+blockquote.assistants-checklist ul {
+  list-style-type: none;
+}
+blockquote.assistants-checklist ul li {
+  margin-bottom: 0.6em;
+}
+blockquote.assistants-checklist ul li:before {
+  content: '✔';
+  position: absolute;
+  left: 1em;
+}

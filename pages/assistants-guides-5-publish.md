@@ -7,13 +7,11 @@ order: 105
 excerpt: Publishing Sketch Assistants.
 ---
 
-Publish your Assistant to allow Sketch to automatically fetch it for users when they open a document with it added.
+Publish your Assistant so it can be downloaded automatically whenever a document using it is opened with Sketch. Opt in to be included on the [Sketch Assistant directory](https://sketch.com/extensions/assistants).
 
-Published Assistants can also be listed on the Sketch website. We recommend publishing to [npm](https://www.npmjs.com), but self-hosting is also an option.
+We recommend publishing to [npm](https://www.npmjs.com) as this makes your Assistant package easily accessible to others and requires only some addition metadata to get listed on the Assistant directly. However, self-hosting your Assistant is also an option.
 
-Once you've created an Assistant package, perhaps after following our [Getting started](/assistants/getting-started) and [Writing a rule](/assistants/write-a-rule) guides, you're ready to publish.
-
-## Publishing to npm
+## Publish to npm
 
 Below is a list of steps to publish your Assistant to npm. For more information on publishing JavaScript packages see the [documentation](https://docs.npmjs.com/packages-and-modules).
 
@@ -38,9 +36,9 @@ A Sketch document configured with a published Assistant is truly portable - othe
 
 ## Self-hosting
 
-There is no hard requirement that your Assistant is published to npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, it can be added to Sketch documents and shared.
+There is no strict requirement that your Assistant is published to npm. As long as your Assistant package is hosted somewhere on the web, accessible to your intended audience, it can be added to Sketch documents and shared.
 
-Running the following command in an Assistant generated with our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository will yield a tarball file in the current working directory.
+Running the following command in an Assistant generated with our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) repository creates a `.tgz` archive in the current working directory.
 
 ```
 npm run package-tarball
@@ -48,45 +46,82 @@ npm run package-tarball
 
 Once the resulting `.tgz` archive is uploaded, add the Assistant to a Sketch document via the ⚙️ › _Add from URL…_ option within the _Manage Assistants…_ sheet for your document.
 
-## Updating published Assistants
+## Update published Assistants
 
 Sketch does not check if there are newer versions of your published Assistant, so it won't automatically prompt users to update Assistants added to documents.
 
 If there's a newer version of an Assistant available, and you want to update a document to take advantage of it you'll need to re-add the Assistant to that document. Either via the ⚙️ › _Add from Archive…_ option within the _Manage Assistants…_ sheet for your document, or add the Assistant again from [sketch.com](https://www.sketch.com).
 
-## Listing on [sketch.com](https://www.sketch.com)
+## Sketch Assistant directory
 
-Once published to npm you can opt-in to having your Assistant listed on [sketch.com](https://www.sketch.com). The benefits of doing this are:
+Including your Assistant in the directory makes it more discoverable for Sketch users and is directly accessible through the _Find Assistants…_ menu item in Sketch.
 
-- A publicly hosted homepage for your Assistant on [sketch.com](https://www.sketch.com), automatically generated from your Assistant's README and `package.json` data.
-- Your Assistant will become discoverable to a wider audience.
-- The homepage will include a "Add to Sketch" button that will open Sketch and add the latest version of your Assistant to the current document. Read more about this in the [One-click add button](/assistants/one-click-add) documentation.
+1. **One-click [_Add to Sketch_](/assistants/one-click-add) button to add an Assistant to the current document**
+1. **Assistants are organised by pre-defined categories**
+1. **Detail page generated from the Assistant's `README.md` documentation**
 
-### Requirements
+### Checklist
 
-The following requirements must be met to get your Assistant listed.
+Use the following checklist to get your Assistant included in the Sketch Assistant directory.
 
-1. Published publicly to npm
-1. Assistant's `package.json` must contain:
-   1. Version number, must be `1.0.0` or greater
-   1. A [homepage](https://docs.npmjs.com/files/package.json#homepage) url value
-   1. [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public`
-   1. Metadata object `sketch-assistant`, with `title`, `description` and (optionally) `icon`
-   1. `sketch` string pointing to a built, single-file bundle of your Assistant
-   1. [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string
+<!-- prettier-ignore -->
+> #### Include correct metadata in `package.json`
+>
+> - Version number, must be `1.0.0` or greater
+> - Relative path pointing to a built, single-file bundle of your Assistant, e.g. `dist/sketch.js`
+> - Values for display title, description and icon in `sketch-assistant`.
+>   
+>   ```
+>   "sketch-assistant": {
+>     "title": "Naming Conventions",
+>     "description": "Naming conventions used by the Sketch design team",
+>     "icon": "https://user-images.githubusercontent.com/1078571/81808046-0a6e2b00-9517-11ea-9b6c-1c6fa9a377ba.png"
+>   }
+>   ```
+> - Link to the Assistant documentation in [homepage](https://docs.npmjs.com/files/package.json#homepage).
+>   This can be your own website or the Assistants directory detail using the following URL format:
+>
+>   ```
+>   https://sketch.com/extensions/assistants/{assistant-package-name}`
+>   ```
+>   See [_Tidy_](https://sketch.com/extensions/assistants/@sketch-hq/sketch-tidy-assistant/) for reference
+> - [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string.
+> - [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public` to opt in to be indexed by the Assistant directory, see [full list](#pre-defined-categories)
+>
+> #### Prepare documentation in `README.md`
+>
+> - Do not include _Add to Sketch_ links or buttons
+> - Document rule and configuration choices
+>
+> #### Publish to npm
+>
+> - Publish to npm as described above
+> - Confirm the Assistant appears in the search results for the [`sketch-assistant` and `public` keywords](https://www.npmjs.com/search?q=keywords%3Asketch%20assistant%2Cpublic). Please note, it can take a while until it is included in the results.
+{: class="assistants-checklist"}
 
-> 💡 Assistants created via our [Getting started](/assistants/getting-started) guide are already fully set up.
+### `README.md` best practices
 
-### Best practices
+The `README.md` Markdown contents are used to generate the Assistant's directory detail page.
 
-- Don't include the `title` and `description` used in `package.json` as the first items on your README file.
-- Document your rule and configuration choices both in your Assistant definitions in code and their README files - find out more about this on our [Rules and report items](/assistants/rules-and-reports) page.
-- Consider assigning your Assistant one or more of the below category [keywords](https://docs.npmjs.com/files/package.json#keywords) to take advantage of future improvements to Assistant discoverability. The first of these keywords encountered in the array will be considered your Assistant's primary category.
-  - `guidelines`
-  - `organization`
-  - `accessibility`
-  - `ios`
-  - `mac`
-  - `windows`
-  - `web`
-  - `android`
+- Do not start with the title or description used in `package.json`, start with a summary of the rules the Assistant contains and why.
+- Do not include the Assistant icon.
+- Document what each rule does.
+- Provide examples of do's and don'ts, with images if helpful.
+- Use HTML fragment identifiers for each rule following the `{assistant-package-name}/{rule-name}` convention. This is used by Sketch to link to detailed rule documentation, e.g. any Assistant using the [`groups-max-layers`](https://github.com/sketch-hq/sketch-assistants/tree/main/assistants/core/src/rules/groups-max-layers) rule.
+
+  ```
+  <h1 id="@sketch-hq/sketch-core-assistant/groups-max-layers">Groups should contain no more than 10 layers</h1>
+  ```
+
+### Pre-defined categories
+
+To make it easier to find the right Assistant, the directory uses a set of predefined categories. Consider assigning your Assistant one or more of the below category [keywords](https://docs.npmjs.com/files/package.json#keywords). The first of these keywords specified in the array will be used as your Assistant's primary category.
+
+- `guidelines`
+- `organization`
+- `accessibility`
+- `ios`
+- `mac`
+- `windows`
+- `web`
+- `android`

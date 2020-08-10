@@ -85,7 +85,7 @@ Use the following checklist to get your Assistant included in the Sketch Assista
 >   https://sketch.com/extensions/assistants/{assistant-package-name}`
 >   ```
 >   See [_Tidy_](https://sketch.com/extensions/assistants/@sketch-hq/sketch-tidy-assistant/) for reference
-> - [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string.
+> - [Author](https://docs.npmjs.com/files/package.json#people-fields-author-contributors) object, containing at least a `name` string. It is recommended to include an email address for support.
 > - [Keywords](https://docs.npmjs.com/files/package.json#keywords) `sketch assistant` and `public` to opt in to be indexed by the Assistant directory, see [full list](#pre-defined-categories)
 >
 > #### Prepare documentation in `README.md`

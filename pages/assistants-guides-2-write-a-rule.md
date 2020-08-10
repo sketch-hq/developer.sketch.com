@@ -171,4 +171,4 @@ export default assistant
 
 > 💡If you felt limited by having to test your Assistant in Sketch during this guide, without access to familiarities like `console.log` then have a read of our [Running and testing Assistants](/assistants/run-and-test) guide. This will discuss how to test your Assistant in Node, or run it from the command line.
 
-> 👉Next steps could include [Extending an Assistant](/assistants/extending-assistants), or deep diving into the [API reference](/assistants/api).
+> 👉Next steps could include [Extending an Assistant](/assistants/extend-assistants), or deep diving into the [API reference](/assistants/api).

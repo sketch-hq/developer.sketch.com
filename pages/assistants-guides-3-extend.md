@@ -1,7 +1,7 @@
 ---
 title: Extend Assistants
 section: assistants
-permalink: /assistants/extending-assistants
+permalink: /assistants/extend-assistants
 chapter: Guides
 order: 103
 excerpt: Extend existing Sketch Assistants and repurpose rules others have written.

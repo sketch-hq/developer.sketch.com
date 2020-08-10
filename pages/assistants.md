@@ -1,12 +1,12 @@
 ---
-title: Assistants (Beta)
+title: Assistants
 section: assistants
 permalink: /assistants/
 order: 2
 excerpt: Bring consistency to your designs and reduce friction between team members with Assistants. Learn core concepts and how to create and publish Assistants.
 ---
 
-Bring consistency to your designs and reduce friction between team members with Assistants. 
+Bring consistency to your designs and reduce friction between team members with Assistants.
 
 Assistants work both inside Sketch and on the command-line on any platform, unlike plugins which are general purpose extensions for the Sketch Mac app. Create your own, either by modifying existing Assistants or writing your own rule implementations in TypeScript.
 
@@ -30,4 +30,3 @@ One of the fundamentals of Assistants is that they are defined per document. You
 Assistants are built to be shared and to reuse existing rules written by others so that you only have to implement your own rules when necessary. Take a look at the [rules provided by Sketch](https://github.com/sketch-hq/sketch-assistants/tree/main/assistants/core#available-rules) that you can use in your own Assistants.
 
 Create your own Assistant from the [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) or follow [the guides](/assistants/getting-started) for more detail.
-

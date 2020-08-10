@@ -60,8 +60,9 @@ A few points to note:
 
 Rule logic is implemented in the function set as the `rule` property in the rule definition object. So far we've just defined an empty anonymous async function:
 
+<!-- prettier-ignore -->
 ```typescript
-;async (context) => {
+async (context) => {
   // Rule logic will go here
 }
 ```
@@ -74,8 +75,9 @@ Let's add the logic for disallowing _lorem ipsum_ in text layers. We'll do this 
 1. Test whether the objects meet some condition
 1. If so, report it
 
+<!-- prettier-ignore -->
 ```typescript
-;async (context) => {
+async (context) => {
   const { utils } = context
   // Iterate
   for (const layer of utils.objects.text) {
@@ -103,8 +105,9 @@ At the moment the rule is hard coded to look for the `lorem ipsum` string. By ge
 
 Here's the new, generalized rule function,
 
+<!-- prettier-ignore -->
 ```typescript
-;async (context) => {
+async (context) => {
   const { utils } = context
 
   // Get a configuration option named "pattern"

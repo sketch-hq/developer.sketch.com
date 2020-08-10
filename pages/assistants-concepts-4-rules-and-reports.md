@@ -55,7 +55,7 @@ Report messages are the first argument passed to the [`utils.report`](/assistant
 
 ## Assistant homepages
 
-When [publishing](/assistants/publishing) your Assistant we advise you set a `homepage` value in your `package.json`.
+When [publishing](/assistants/publish) your Assistant we advise you set a `homepage` value in your `package.json`.
 
 Sketch will direct users to the homepage when they click to find out more about an Assistant or an individual rule from Sketch, so its a great place to expand on your rationale as well as detailing rule options.
 

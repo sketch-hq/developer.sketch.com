@@ -66,4 +66,4 @@ At this point you may wish to name your Assistant properly, and add some descrip
 1. Update the `title` and `description` values in the `sketch-assistant` object property in `package.json`.
 1. Update the `homepage` value in `package.json` - this is likely just the GitHub repository page for now. Sketch will direct users to this page to find out more about your Assistant.
 
-> 👉 Continue on to [Writing a rule](/assistants/writing-a-rule) if you're ready to learn more.
+> 👉 Continue on to [Writing a rule](/assistants/write-a-rule) if you're ready to learn more.

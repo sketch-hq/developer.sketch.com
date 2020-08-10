@@ -1,10 +1,10 @@
 ---
-title: Writing a rule
+title: Write a rule
 section: assistants
-permalink: /assistants/writing-a-rule
+permalink: /assistants/write-a-rule
 chapter: Guides
 order: 101
-excerpt: Writing a Sketch Assistant rule.
+excerpt: Writing a custom Sketch Assistant rule gives you full control over the logic checking a document.
 ---
 
 This guide shows how to create an Assistant rule that checks the contents of Text Layers to make sure they don’t include "Lorem Ipsum" placeholder text. It finishes describing how to evolve the rule to disallow any string using Assistant configuration.
@@ -18,7 +18,10 @@ If you've only made minimal changes to the starter project then you should find 
 Begin to rework the _Hello World_ rule into a rule that disallows lorem ipsum in text content. Feel free to replace the contents of `src/index.ts` wholesale with the below:
 
 ```typescript
-import { AssistantPackage, RuleDefinition } from '@sketch-hq/sketch-assistant-types'
+import {
+  AssistantPackage,
+  RuleDefinition,
+} from '@sketch-hq/sketch-assistant-types'
 
 const textNoLoremIpsum: RuleDefinition = {
   rule: async (context) => {
@@ -26,7 +29,8 @@ const textNoLoremIpsum: RuleDefinition = {
   },
   name: 'sketch-assistant-template/text-no-lorem-ipsum',
   title: 'Text should not contain lorem ipsum',
-  description: 'Reports a violation when text layers contain lorem ipsum placeholder',
+  description:
+    'Reports a violation when text layers contain lorem ipsum placeholder',
 }
 
 const assistant: AssistantPackage = async () => {
@@ -36,7 +40,7 @@ const assistant: AssistantPackage = async () => {
     config: {
       rules: {
         'sketch-assistant-template/text-no-lorem-ipsum': {
-          active: true
+          active: true,
         },
       },
     },
@@ -57,7 +61,7 @@ A few points to note:
 Rule logic is implemented in the function set as the `rule` property in the rule definition object. So far we've just defined an empty anonymous async function:
 
 ```typescript
-async (context) => {
+;async (context) => {
   // Rule logic will go here
 }
 ```
@@ -71,7 +75,7 @@ Let's add the logic for disallowing _lorem ipsum_ in text layers. We'll do this 
 1. If so, report it
 
 ```typescript
-async (context) => {
+;async (context) => {
   const { utils } = context
   // Iterate
   for (const layer of utils.objects.text) {
@@ -79,10 +83,7 @@ async (context) => {
     // Test
     if (value.toLowerCase().includes('lorem ipsum')) {
       // Report
-      utils.report(
-        `Layer “${layer.name}” contains “lorem ipsum”`,
-        layer
-      )
+      utils.report(`Layer “${layer.name}” contains “lorem ipsum”`, layer)
     }
   }
 }
@@ -98,28 +99,25 @@ A few points to note:
 
 ## Making a configurable rule
 
-At the moment the rule is hard coded to look for the `lorem ipsum` string. By generalizing it to accept an _option_ we make it configurable, and the Assistant more widely useful to Sketch users once [published](/assistants/publishing).
+At the moment the rule is hard coded to look for the `lorem ipsum` string. By generalizing it to accept an _option_ we make it configurable, and the Assistant more widely useful to Sketch users once [published](/assistants/publish).
 
 Here's the new, generalized rule function,
 
 ```typescript
-async (context) => {
+;async (context) => {
   const { utils } = context
-  
+
   // Get a configuration option named "pattern"
   const pattern = utils.getOption('pattern')
   if (typeof pattern !== 'string') throw Error()
-  
+
   // Iterate
   for (const layer of utils.objects.text) {
     const value = layer.attributedString.string
     // Test
     if (value.includes(pattern)) {
       // Report
-      utils.report(
-        `Layer “${layer.name}” contains “${pattern}”`,
-        layer
-      )
+      utils.report(`Layer “${layer.name}” contains “${pattern}”`, layer)
     }
   }
 }
@@ -135,7 +133,10 @@ We're not quite done yet, because while our rule is now configurable we haven't 
 Below we're defining the new generalized rule and naming it `text-disallow`, as well as setting `pattern` to `Type something`. This will have the interesting effect of reporting a problem for any text layer added to the canvas left with default copy, which could often indicate sloppy work.
 
 ```typescript
-import { AssistantPackage, RuleDefinition } from '@sketch-hq/sketch-assistant-types'
+import {
+  AssistantPackage,
+  RuleDefinition,
+} from '@sketch-hq/sketch-assistant-types'
 
 const textDisallow: RuleDefinition = {
   rule: async (context) => {
@@ -143,7 +144,8 @@ const textDisallow: RuleDefinition = {
   },
   name: 'sketch-assistant-template/text-disallow',
   title: (config) => `Text should not contain "${config.pattern}"`,
-  description: 'Reports a violation when text layers contain a configurable text pattern',
+  description:
+    'Reports a violation when text layers contain a configurable text pattern',
 }
 
 const assistant: AssistantPackage = async () => {
@@ -154,7 +156,7 @@ const assistant: AssistantPackage = async () => {
       rules: {
         'sketch-assistant-template/text-disallow': {
           active: true,
-          pattern: 'Type something'
+          pattern: 'Type something',
         },
       },
     },
@@ -164,6 +166,6 @@ const assistant: AssistantPackage = async () => {
 export default assistant
 ```
 
-> 💡If you felt limited by having to test your Assistant in Sketch during this guide, without access to familiarities like `console.log` then have a read of our [Running and testing Assistants](/assistants/running-and-testing) guide. This will discuss how to test your Assistant in Node, or run it from the command line.
+> 💡If you felt limited by having to test your Assistant in Sketch during this guide, without access to familiarities like `console.log` then have a read of our [Running and testing Assistants](/assistants/run-and-test) guide. This will discuss how to test your Assistant in Node, or run it from the command line.
 
 > 👉Next steps could include [Extending an Assistant](/assistants/extending-assistants), or deep diving into the [API reference](/assistants/api).

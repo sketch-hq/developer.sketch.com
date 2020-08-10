@@ -1,5 +1,5 @@
 ---
-title: Assistants on the command-line
+title: Assistants command-line utility
 section: assistants
 permalink: /assistants/cli
 chapter: Concepts

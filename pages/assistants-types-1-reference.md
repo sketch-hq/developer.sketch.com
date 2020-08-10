@@ -39,7 +39,7 @@ The `AssistantEnv` argument contains information about the outer environment, in
 | `rules` | `RuleDefinition[]` | An array of `RuleDefinition` objects |
 | `config` | `AssistantConfig` | An object where you can turn rules on and off, as well as configure them with option values if required |
 
-> 💡 Additional Assistant metadata, like a human readable `title` and `description` are defined in package.json not in source code. This is to avoid having to execute JavaScript in order to discover this sort of Assistant metadata. Check our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) for an example package.json file or follow our [publishing](/assistants/publishing) guide for more information.
+> 💡 Additional Assistant metadata, like a human readable `title` and `description` are defined in package.json not in source code. This is to avoid having to execute JavaScript in order to discover this sort of Assistant metadata. Check our [Sketch Assistant Template](https://github.com/sketch-hq/sketch-assistant-template) for an example package.json file or follow our [publishing](/assistants/publish) guide for more information.
 
 ## `RuleDefinition`
 

@@ -1,10 +1,10 @@
 ---
-title: Extending
+title: Extend Assistants
 section: assistants
 permalink: /assistants/extending-assistants
 chapter: Guides
 order: 103
-excerpt: Extending Sketch Assistants.
+excerpt: Extend existing Sketch Assistants and repurpose rules others have written.
 ---
 
 Assistants are designed to be repurposed. They can be created by entirely relying on rules others have written – including those provided by Sketch – specifying just a configuration defining which rules are active and how they should be applied.
@@ -15,7 +15,7 @@ There are typically three reasons for extending an Assistant:
 2. Tweak the configuration for a particular rule of an existing Assistant.
 3. Disable one or more rules of an existing Assistant.
 
-> 💡 Only write custom rules when you absolutely have to. And if you do, consider making your own rules [configurable](/assistants/writing-a-rule#making-a-configurable-rule) so others can re-purpose them in their Assistants.
+> 💡 Only write custom rules when you absolutely have to. And if you do, consider making your own rules [configurable](/assistants/write-a-rule#making-a-configurable-rule) so others can re-purpose them in their Assistants.
 
 ## Overview
 
@@ -33,7 +33,7 @@ const assistant: AssistantPackage = async (env) => {
   return {
     name: 'my-assistant',
     rules: [],
-    config: { rules: {} }
+    config: { rules: {} },
   }
 }
 
@@ -55,10 +55,10 @@ const assistant: AssistantPackage = [
         rules: {
           'useful-assistant/beep': { active: false },
           'useful-assistant/boop': { active: true },
-        }
-      }
+        },
+      },
     }
-  }
+  },
 ]
 
 export default assistant

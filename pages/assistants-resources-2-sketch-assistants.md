@@ -1,5 +1,5 @@
 ---
-title: Sketch Assistants Monorepo
+title: Sketch Assistants on GitHub
 section: assistants
 chapter: Resources
 redirect_from: /assistants/resources/sketch-assistants

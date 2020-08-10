@@ -1,7 +1,7 @@
 ---
-title: Publishing
+title: Publish Assistants
 section: assistants
-permalink: /assistants/publishing
+permalink: /assistants/publish
 chapter: Guides
 order: 105
 excerpt: Publishing Sketch Assistants.
@@ -11,7 +11,7 @@ Publish your Assistant to allow Sketch to automatically fetch it for users when 
 
 Published Assistants can also be listed on the Sketch website. We recommend publishing to [npm](https://www.npmjs.com), but self-hosting is also an option.
 
-Once you've created an Assistant package, perhaps after following our [Getting started](/assistants/getting-started) and [Writing a rule](/assistants/writing-a-rule) guides, you're ready to publish.
+Once you've created an Assistant package, perhaps after following our [Getting started](/assistants/getting-started) and [Writing a rule](/assistants/write-a-rule) guides, you're ready to publish.
 
 ## Publishing to npm
 

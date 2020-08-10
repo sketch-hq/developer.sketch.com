@@ -1,10 +1,10 @@
 ---
-title: Running and testing
+title: Run and test Assistants
 section: assistants
-permalink: /assistants/running-and-testing
+permalink: /assistants/run-and-test
 chapter: Guides
 order: 104
-excerpt: Running and testing Sketch Assistants locally.
+excerpt: Use Sketch documents in unit tests during development.
 ---
 
 This guide covers the various ways you can run and test your Assistants in NodeJS during development and after publishing.
@@ -61,12 +61,12 @@ runAssistant({
   cancelToken,
   getImageMetadata,
   ignoreConfig,
-  ruleTimeout
+  ruleTimeout,
 })
-  .then(res => {
+  .then((res) => {
     // Handle success
   })
-  .catch(err => {
+  .catch((err) => {
     // Handle error
   })
 ```

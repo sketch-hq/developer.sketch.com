@@ -26,9 +26,9 @@ Reasons for encountering a rule error could include,
 Upon encountering a rule error Sketch will display a _Could not check entire document_ message beneath the rule in the results sheet. You can click the small icon to the right of the message to copy error details to the clipboard.
 
 <p align="center">
-  <img src="/images/developer/assistant-rule-error.jpg"
+  <img src="/images/developer/assistant-rule-errors.png"
     alt="Assistant showing a rule error"
-    width="400" />
+    width="446" />
 </p>
 
 ## General errors
@@ -40,9 +40,9 @@ One reason for encountering a general error could be that your Assistant wasn't 
 Sketch will replace your Assistant results with an error display if a general error has occurred.
 
 <p align="center">
-  <img src="/images/developer/assistant-general-error.jpg"
+  <img src="/images/developer/assistant-general-error.png"
     alt="Assistant showing a rule error"
-    width="400" />
+    width="446" />
 </p>
 
 > 😵 If you're experiencing other errors you don't understand, or you suspect something isn't working right then raise an issue in the [sketch-assistants](https://github.com/sketch-hq/sketch-assistants/issues) repository - we'd be happy to help!

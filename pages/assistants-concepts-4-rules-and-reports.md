@@ -28,7 +28,7 @@ The `title` property of the [`RuleDefinition`](/assistants/type-reference#rulede
 <p align="center">
   <img src="/images/developer/assistant-rule-title.png"
     alt="Assistant rule titles"
-    width="400" />
+    width="446" />
 </p>
 
 - Describes the expectation enforced by the rule, e.g. _Page names should start with an emoji_.
@@ -44,7 +44,7 @@ The `description` property of the [`RuleDefinition`](/assistants/type-reference#
 <p align="center">
   <img src="/images/developer/assistant-rule-description.png"
     alt="Assistant rule descriptions"
-    width="400" />
+    width="446" />
 </p>
 
 - Describe why the rule exists, what problem it seeks solve.
@@ -56,7 +56,7 @@ Report messages are the first argument passed to the [`utils.report`](/assistant
 <p align="center">
   <img src="/images/developer/assistant-report-messages.png"
     alt="Assistant report messages"
-    width="400" />
+    width="446" />
 </p>
 
 - Describes how an aspect of the document has diverged from the expectation layed out in the rule title.
@@ -86,7 +86,7 @@ The content of errors manually thrown from rule functions are also part of the c
 <p align="center">
   <img src="/images/developer/assistant-rule-errors.png"
     alt="Assistant rule errors"
-    width="400" />
+    width="446" />
 </p>
 
 You might consider manually throwing a rule error when your rule encounters some condition which means it's unable to continue executing. For example when an option is missing or not in the right data format, or perhaps due to the Sketch document `version` being incompatible.

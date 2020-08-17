@@ -121,9 +121,16 @@ blockquote.assistants-checklist ul {
 }
 blockquote.assistants-checklist ul li {
   margin-bottom: 0.6em;
+  position: relative;
 }
 blockquote.assistants-checklist ul li:before {
-  content: '✔';
+  content: '';
   position: absolute;
-  left: 1em;
+  left: -1.2em;
+  top: 0.25em;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.75 7.75L7 11.25l5.25-6.5' stroke='%23000' stroke-width='1.5' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 16px;
+  height: 16px;
 }

@@ -1,8 +1,6 @@
 ---
 title: ListTypeActionBullet
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ListTypeActionBullet action will appear here.
+No details available for `ListTypeActionBullet`.

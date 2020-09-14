@@ -1,8 +1,6 @@
 ---
 title: MakeGrid
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MakeGrid action will appear here.
+No details available for `MakeGrid`.

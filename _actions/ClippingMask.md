@@ -1,8 +1,6 @@
 ---
 title: ClippingMask
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ClippingMask action will appear here.
+No details available for `ClippingMask`.

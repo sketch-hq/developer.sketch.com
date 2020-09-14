@@ -1,8 +1,6 @@
 ---
 title: RemoveTextTransform
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RemoveTextTransform action will appear here.
+No details available for `RemoveTextTransform`.

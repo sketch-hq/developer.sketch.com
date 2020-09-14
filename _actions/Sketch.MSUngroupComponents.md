@@ -1,8 +1,6 @@
 ---
 title: Sketch.MSUngroupComponents
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Sketch.MSUngroupComponents action will appear here.
+No details available for `Sketch.MSUngroupComponents`.

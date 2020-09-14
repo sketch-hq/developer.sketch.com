@@ -1,8 +1,6 @@
 ---
 title: Sketch.MSDeleteComponent
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Sketch.MSDeleteComponent action will appear here.
+No details available for `Sketch.MSDeleteComponent`.

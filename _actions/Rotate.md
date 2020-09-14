@@ -1,8 +1,6 @@
 ---
 title: Rotate
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Rotate action will appear here.
+No details available for `Rotate`.

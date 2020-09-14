@@ -1,8 +1,6 @@
 ---
 title: ResetOrigin
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ResetOrigin action will appear here.
+No details available for `ResetOrigin`.

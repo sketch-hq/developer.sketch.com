@@ -1,8 +1,6 @@
 ---
 title: MoveForward
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MoveForward action will appear here.
+No details available for `MoveForward`.

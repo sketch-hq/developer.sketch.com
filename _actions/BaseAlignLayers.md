@@ -1,8 +1,6 @@
 ---
 title: BaseAlignLayers
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the BaseAlignLayers action will appear here.
+No details available for `BaseAlignLayers`.

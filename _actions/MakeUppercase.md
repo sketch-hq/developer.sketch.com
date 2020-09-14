@@ -1,8 +1,6 @@
 ---
 title: MakeUppercase
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MakeUppercase action will appear here.
+No details available for `MakeUppercase`.

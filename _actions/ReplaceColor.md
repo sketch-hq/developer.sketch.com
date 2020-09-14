@@ -1,8 +1,6 @@
 ---
 title: ReplaceColor
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ReplaceColor action will appear here.
+No details available for `ReplaceColor`.

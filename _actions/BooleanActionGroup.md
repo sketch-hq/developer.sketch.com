@@ -1,8 +1,6 @@
 ---
 title: BooleanActionGroup
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the BooleanActionGroup action will appear here.
+No details available for `BooleanActionGroup`.

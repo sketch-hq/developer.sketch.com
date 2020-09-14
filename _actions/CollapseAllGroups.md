@@ -1,8 +1,6 @@
 ---
 title: CollapseAllGroups
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CollapseAllGroups action will appear here.
+No details available for `CollapseAllGroups`.

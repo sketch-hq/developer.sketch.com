@@ -1,8 +1,6 @@
 ---
 title: HandlerGotFocus
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the HandlerGotFocus action will appear here.
+No details available for `HandlerGotFocus`.

@@ -1,8 +1,6 @@
 ---
 title: AlignLayersRight
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignLayersRight action will appear here.
+No details available for `AlignLayersRight`.

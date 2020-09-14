@@ -1,8 +1,6 @@
 ---
 title: BaseStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the BaseStyle action will appear here.
+No details available for `BaseStyle`.

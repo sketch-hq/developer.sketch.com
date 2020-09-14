@@ -1,8 +1,6 @@
 ---
 title: ShowDocumentFonts
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ShowDocumentFonts action will appear here.
+No details available for `ShowDocumentFonts`.

@@ -1,8 +1,6 @@
 ---
 title: LayerHeightFocus
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the LayerHeightFocus action will appear here.
+No details available for `LayerHeightFocus`.

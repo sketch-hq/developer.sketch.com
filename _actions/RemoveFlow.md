@@ -1,8 +1,6 @@
 ---
 title: RemoveFlow
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RemoveFlow action will appear here.
+No details available for `RemoveFlow`.

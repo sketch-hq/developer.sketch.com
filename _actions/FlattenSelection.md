@@ -1,8 +1,6 @@
 ---
 title: FlattenSelection
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the FlattenSelection action will appear here.
+No details available for `FlattenSelection`.

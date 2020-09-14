@@ -1,8 +1,6 @@
 ---
 title: ConstraintFixHeight
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ConstraintFixHeight action will appear here.
+No details available for `ConstraintFixHeight`.

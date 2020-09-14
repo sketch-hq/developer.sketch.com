@@ -1,8 +1,6 @@
 ---
 title: ToggleSelection
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleSelection action will appear here.
+No details available for `ToggleSelection`.

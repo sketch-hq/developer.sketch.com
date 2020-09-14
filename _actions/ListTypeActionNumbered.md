@@ -1,8 +1,6 @@
 ---
 title: ListTypeActionNumbered
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ListTypeActionNumbered action will appear here.
+No details available for `ListTypeActionNumbered`.

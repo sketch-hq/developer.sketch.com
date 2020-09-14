@@ -1,8 +1,6 @@
 ---
 title: DetachSharedStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the DetachSharedStyle action will appear here.
+No details available for `DetachSharedStyle`.

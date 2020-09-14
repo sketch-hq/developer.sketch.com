@@ -1,8 +1,6 @@
 ---
 title: PreviewAtActualSize
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the PreviewAtActualSize action will appear here.
+No details available for `PreviewAtActualSize`.

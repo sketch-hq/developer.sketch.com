@@ -1,8 +1,6 @@
 ---
 title: Sketch.MSTidy
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Sketch.MSTidy action will appear here.
+No details available for `Sketch.MSTidy`.

@@ -1,8 +1,6 @@
 ---
 title: CopyStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CopyStyle action will appear here.
+No details available for `CopyStyle`.

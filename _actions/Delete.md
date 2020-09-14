@@ -1,8 +1,6 @@
 ---
 title: Delete
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Delete action will appear here.
+No details available for `Delete`.

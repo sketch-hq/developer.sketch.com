@@ -1,8 +1,6 @@
 ---
 title: TriangleShape
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the TriangleShape action will appear here.
+No details available for `TriangleShape`.

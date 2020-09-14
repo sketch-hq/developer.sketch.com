@@ -1,8 +1,6 @@
 ---
 title: OpenSymbolInLibrary
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the OpenSymbolInLibrary action will appear here.
+No details available for `OpenSymbolInLibrary`.

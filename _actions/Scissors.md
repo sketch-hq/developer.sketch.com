@@ -1,8 +1,6 @@
 ---
 title: Scissors
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Scissors action will appear here.
+No details available for `Scissors`.

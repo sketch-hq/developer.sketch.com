@@ -1,8 +1,6 @@
 ---
 title: Duplicate
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Duplicate action will appear here.
+No details available for `Duplicate`.

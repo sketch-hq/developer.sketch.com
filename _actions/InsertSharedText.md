@@ -1,8 +1,6 @@
 ---
 title: InsertSharedText
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the InsertSharedText action will appear here.
+No details available for `InsertSharedText`.

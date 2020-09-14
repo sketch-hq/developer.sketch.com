@@ -1,8 +1,6 @@
 ---
 title: ToggleInterface
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleInterface action will appear here.
+No details available for `ToggleInterface`.

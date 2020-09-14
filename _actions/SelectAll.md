@@ -1,8 +1,6 @@
 ---
 title: SelectAll
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the SelectAll action will appear here.
+No details available for `SelectAll`.

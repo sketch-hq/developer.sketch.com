@@ -1,8 +1,6 @@
 ---
 title: TogglePixelLines
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the TogglePixelLines action will appear here.
+No details available for `TogglePixelLines`.

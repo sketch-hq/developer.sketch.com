@@ -1,8 +1,6 @@
 ---
 title: ListTypeActionNone
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ListTypeActionNone action will appear here.
+No details available for `ListTypeActionNone`.

@@ -1,8 +1,6 @@
 ---
 title: Undo
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Undo action will appear here.
+No details available for `Undo`.

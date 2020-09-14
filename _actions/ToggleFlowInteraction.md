@@ -1,8 +1,6 @@
 ---
 title: ToggleFlowInteraction
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleFlowInteraction action will appear here.
+No details available for `ToggleFlowInteraction`.

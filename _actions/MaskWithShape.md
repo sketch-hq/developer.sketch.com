@@ -1,8 +1,6 @@
 ---
 title: MaskWithShape
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MaskWithShape action will appear here.
+No details available for `MaskWithShape`.

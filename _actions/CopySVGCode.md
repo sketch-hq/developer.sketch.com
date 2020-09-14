@@ -1,8 +1,6 @@
 ---
 title: CopySVGCode
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CopySVGCode action will appear here.
+No details available for `CopySVGCode`.

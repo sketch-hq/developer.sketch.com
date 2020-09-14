@@ -1,8 +1,6 @@
 ---
 title: ColorInspectorModePicker
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ColorInspectorModePicker action will appear here.
+No details available for `ColorInspectorModePicker`.

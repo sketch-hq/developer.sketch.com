@@ -1,8 +1,6 @@
 ---
 title: Subtract
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Subtract action will appear here.
+No details available for `Subtract`.

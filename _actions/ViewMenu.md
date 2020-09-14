@@ -1,8 +1,6 @@
 ---
 title: ViewMenu
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ViewMenu action will appear here.
+No details available for `ViewMenu`.

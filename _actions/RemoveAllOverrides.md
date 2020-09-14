@@ -1,8 +1,6 @@
 ---
 title: RemoveAllOverrides
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RemoveAllOverrides action will appear here.
+No details available for `RemoveAllOverrides`.

@@ -1,8 +1,6 @@
 ---
 title: IncompatiblePluginsDisabled
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the IncompatiblePluginsDisabled action will appear here.
+No details available for `IncompatiblePluginsDisabled`.

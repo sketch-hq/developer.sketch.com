@@ -1,8 +1,6 @@
 ---
 title: Scale
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Scale action will appear here.
+No details available for `Scale`.

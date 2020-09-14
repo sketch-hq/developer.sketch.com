@@ -1,8 +1,6 @@
 ---
 title: Ungroup
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Ungroup action will appear here.
+No details available for `Ungroup`.

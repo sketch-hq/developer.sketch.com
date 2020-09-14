@@ -1,8 +1,6 @@
 ---
 title: ViewOnSketchCloudWeb
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ViewOnSketchCloudWeb action will appear here.
+No details available for `ViewOnSketchCloudWeb`.

@@ -1,8 +1,6 @@
 ---
 title: RotateCounterclockwise
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RotateCounterclockwise action will appear here.
+No details available for `RotateCounterclockwise`.

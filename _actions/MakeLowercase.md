@@ -1,8 +1,6 @@
 ---
 title: MakeLowercase
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MakeLowercase action will appear here.
+No details available for `MakeLowercase`.

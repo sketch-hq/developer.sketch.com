@@ -1,8 +1,6 @@
 ---
 title: AlignLayersMiddle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignLayersMiddle action will appear here.
+No details available for `AlignLayersMiddle`.

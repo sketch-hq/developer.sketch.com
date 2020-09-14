@@ -1,8 +1,6 @@
 ---
 title: TextAlignTouchBarGroup
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the TextAlignTouchBarGroup action will appear here.
+No details available for `TextAlignTouchBarGroup`.

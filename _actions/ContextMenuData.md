@@ -1,8 +1,6 @@
 ---
 title: ContextMenuData
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ContextMenuData action will appear here.
+No details available for `ContextMenuData`.

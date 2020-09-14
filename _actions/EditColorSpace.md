@@ -1,8 +1,6 @@
 ---
 title: EditColorSpace
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the EditColorSpace action will appear here.
+No details available for `EditColorSpace`.

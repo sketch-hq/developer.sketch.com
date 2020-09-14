@@ -1,8 +1,6 @@
 ---
 title: Edit
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Edit action will appear here.
+No details available for `Edit`.

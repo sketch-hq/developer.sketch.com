@@ -1,8 +1,6 @@
 ---
 title: RenameLayer
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RenameLayer action will appear here.
+No details available for `RenameLayer`.

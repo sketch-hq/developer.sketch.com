@@ -1,8 +1,6 @@
 ---
 title: MoveUpHierarchy
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MoveUpHierarchy action will appear here.
+No details available for `MoveUpHierarchy`.

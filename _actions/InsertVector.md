@@ -1,8 +1,6 @@
 ---
 title: InsertVector
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the InsertVector action will appear here.
+No details available for `InsertVector`.

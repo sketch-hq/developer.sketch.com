@@ -1,8 +1,6 @@
 ---
 title: RevealInLayerList
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RevealInLayerList action will appear here.
+No details available for `RevealInLayerList`.

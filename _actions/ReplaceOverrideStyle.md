@@ -1,8 +1,6 @@
 ---
 title: ReplaceOverrideStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ReplaceOverrideStyle action will appear here.
+No details available for `ReplaceOverrideStyle`.

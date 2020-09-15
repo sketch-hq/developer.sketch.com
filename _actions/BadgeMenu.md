@@ -1,8 +1,6 @@
 ---
 title: BadgeMenu
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the BadgeMenu action will appear here.
+No details available for `BadgeMenu`.

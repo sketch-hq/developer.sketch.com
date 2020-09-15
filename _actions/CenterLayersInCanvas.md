@@ -1,8 +1,6 @@
 ---
 title: CenterLayersInCanvas
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CenterLayersInCanvas action will appear here.
+No details available for `CenterLayersInCanvas`.

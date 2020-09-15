@@ -1,8 +1,6 @@
 ---
 title: CreateSharedStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CreateSharedStyle action will appear here.
+No details available for `CreateSharedStyle`.

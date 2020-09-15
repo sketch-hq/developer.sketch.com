@@ -1,8 +1,6 @@
 ---
 title: AlignMiddle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignMiddle action will appear here.
+No details available for `AlignMiddle`.

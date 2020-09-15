@@ -1,8 +1,6 @@
 ---
 title: Sketch.MSMaintainScrollPosition
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Sketch.MSMaintainScrollPosition action will appear here.
+No details available for `Sketch.MSMaintainScrollPosition`.

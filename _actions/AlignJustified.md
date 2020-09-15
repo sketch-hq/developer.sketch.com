@@ -1,8 +1,6 @@
 ---
 title: AlignJustified
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignJustified action will appear here.
+No details available for `AlignJustified`.

@@ -1,8 +1,6 @@
 ---
 title: AlignLayersCenter
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignLayersCenter action will appear here.
+No details available for `AlignLayersCenter`.

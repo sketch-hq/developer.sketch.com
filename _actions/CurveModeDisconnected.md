@@ -1,8 +1,6 @@
 ---
 title: CurveModeDisconnected
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CurveModeDisconnected action will appear here.
+No details available for `CurveModeDisconnected`.

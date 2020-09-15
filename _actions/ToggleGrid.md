@@ -1,8 +1,6 @@
 ---
 title: ToggleGrid
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleGrid action will appear here.
+No details available for `ToggleGrid`.

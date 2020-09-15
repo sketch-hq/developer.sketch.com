@@ -1,8 +1,6 @@
 ---
 title: RemoveSelectedOverrides
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RemoveSelectedOverrides action will appear here.
+No details available for `RemoveSelectedOverrides`.

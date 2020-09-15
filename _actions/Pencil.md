@@ -1,8 +1,6 @@
 ---
 title: Pencil
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Pencil action will appear here.
+No details available for `Pencil`.

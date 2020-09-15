@@ -1,8 +1,6 @@
 ---
 title: Zoom
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Zoom action will appear here.
+No details available for `Zoom`.

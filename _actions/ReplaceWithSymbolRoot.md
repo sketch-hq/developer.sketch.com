@@ -1,8 +1,6 @@
 ---
 title: ReplaceWithSymbolRoot
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ReplaceWithSymbolRoot action will appear here.
+No details available for `ReplaceWithSymbolRoot`.

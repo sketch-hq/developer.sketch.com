@@ -1,8 +1,6 @@
 ---
 title: BooleanMenu
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the BooleanMenu action will appear here.
+No details available for `BooleanMenu`.

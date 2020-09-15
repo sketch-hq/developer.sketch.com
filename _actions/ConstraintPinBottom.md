@@ -1,8 +1,6 @@
 ---
 title: ConstraintPinBottom
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ConstraintPinBottom action will appear here.
+No details available for `ConstraintPinBottom`.

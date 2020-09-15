@@ -1,8 +1,6 @@
 ---
 title: TogglePixelGrid
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the TogglePixelGrid action will appear here.
+No details available for `TogglePixelGrid`.

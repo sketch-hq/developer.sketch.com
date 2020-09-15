@@ -1,8 +1,6 @@
 ---
 title: ResizeArtboardToFit
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ResizeArtboardToFit action will appear here.
+No details available for `ResizeArtboardToFit`.

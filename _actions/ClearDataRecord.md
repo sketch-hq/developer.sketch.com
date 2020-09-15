@@ -1,8 +1,6 @@
 ---
 title: ClearDataRecord
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ClearDataRecord action will appear here.
+No details available for `ClearDataRecord`.

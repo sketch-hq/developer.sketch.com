@@ -1,8 +1,6 @@
 ---
 title: CurveModeAsymmetric
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the CurveModeAsymmetric action will appear here.
+No details available for `CurveModeAsymmetric`.

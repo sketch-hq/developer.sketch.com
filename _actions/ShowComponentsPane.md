@@ -1,8 +1,6 @@
 ---
 title: ShowComponentsPane
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ShowComponentsPane action will appear here.
+No details available for `ShowComponentsPane`.

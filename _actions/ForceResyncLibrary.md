@@ -1,8 +1,6 @@
 ---
 title: ForceResyncLibrary
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ForceResyncLibrary action will appear here.
+No details available for `ForceResyncLibrary`.

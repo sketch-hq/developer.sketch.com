@@ -1,8 +1,6 @@
 ---
 title: Intersect
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Intersect action will appear here.
+No details available for `Intersect`.

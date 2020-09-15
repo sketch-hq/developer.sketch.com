@@ -1,8 +1,6 @@
 ---
 title: RefreshData
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the RefreshData action will appear here.
+No details available for `RefreshData`.

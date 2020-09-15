@@ -1,19 +1,47 @@
-/*
+/**
 
-## Getting a list of all the actions:
+Script to generate Markdown files for all Sketch actions.
 
-###  Real Actions
+# Usage
 
-They are extracted from `MSDocument+AllActions.m`. A way to automate the extraction is running this on Sketch's Run Plugin panel, and pasting the result here, replacing the contents of `const actions = [ … ]`:
+  node generate-actions.js
+
+## Update list of actions
+
+The script uses two lists, `actions` and `fakeActions` define below. When 
+actions get added, removed or modified in Sketch they need to be updated.
+
+Actions get be extracted in Sketch using the following code snippet in
+Plugins › Run Script….
 
 ```
-var actions = context.document.actionClasses().slice().map(action => action.toString().replace(/^MS/,"").replace(/Action$/,"")).sort()
+// Get all action classes from MSDocument+AllActions and AppController+Actions
+// and remove `MS` prefixes and `Action` suffixes.
+var actions = []
+  .concat(
+    context.document.actionClasses().slice(),
+    AppController.class().sharedInstance().actionClasses().slice()
+  )
+  .map((action) =>
+    action
+      .toString()
+      .replace(/^MS/, '')
+      .replace(/Action$/, '')
+  )
+  .sort()
+
 log(JSON.stringify(actions, null, 4))
 ```
 
-### Fake Actions
+So called fake actions are not defined as action classes and can only be
+found by searching for `performFakeActionWithID` within the Sketch codebase
+and making sure all identifiers are included in the `fakeAction` variable.
 
-`[MSActionController performFakeActionWithID:context:block]` is used for "fake" actions (i.e: those we want to generate manually from Sketch's code). To get a list of those, we need to search for `performFakeActionWithID` in Xcode.
+# Output
+
+A Markdown files is generated per action. If a file exists already, it will
+be skipped to allow custom documentation.
+
 */
 
 const fs = require('fs')
@@ -52,11 +80,14 @@ const actions = [
   'ApplyVerticalFlip',
   'AssignColorSpace',
   'Assistant',
+  'AssistantActivate',
   'AssistantCheckDocument',
   'AssistantCheckDocumentAutomatically',
+  'AssistantConfigure',
   'AssistantInstallFromDisk',
   'AssistantInstallFromURL',
-  'AssistantRemove',
+  'AssistantInstallMissing',
+  'AssistantShowIgnored',
   'AutoExpandGroups',
   'BackToInstance',
   'BadgeMenu',
@@ -107,6 +138,7 @@ const actions = [
   'CopyOverride',
   'CopySVGCode',
   'CopyStyle',
+  'CreateSharedColor',
   'CreateSharedStyle',
   'CreateSymbol',
   'CurveModeAsymmetric',
@@ -118,6 +150,7 @@ const actions = [
   'DataMenu',
   'DefaultStyle',
   'Delete',
+  'DetachSharedColor',
   'DetachSharedStyle',
   'Difference',
   'DistributeActions',
@@ -129,7 +162,7 @@ const actions = [
   'Export',
   'ExportPDFBook',
   'ExportSelectionWithExportFormats',
-  'FindLayer',
+  'Find',
   'Flatten',
   'FlattenSelection',
   'FlipHorizontal',
@@ -163,6 +196,7 @@ const actions = [
   'LayerXFocus',
   'LayerYFocus',
   'LayoutSettings',
+  'LegacyInsertMenu',
   'LicenseExpired',
   'ListTypeActionBullet',
   'ListTypeActionNone',
@@ -174,8 +208,6 @@ const actions = [
   'MakeLowercase',
   'MakeUppercase',
   'ManageCloudDocumentShareSettings',
-  'ManageComponents',
-  'ManageComponents',
   'MaskWithShape',
   'Mirror',
   'MoveActionGroup',
@@ -191,6 +223,7 @@ const actions = [
   'OffsetPath',
   'OpenPreview',
   'OpenStyleInLibrary',
+  'OpenSwatchInLibrary',
   'OpenSymbolInLibrary',
   'OpenTypeFeatures',
   'OrganizeImportedSymbols',
@@ -225,6 +258,7 @@ const actions = [
   'ReplaceWithSymbol',
   'ReplaceWithSymbolRoot',
   'ResetOrigin',
+  'ResetSharedColor',
   'ResetSharedStyle',
   'ResetSymbolSize',
   'ResizeArtboardToFit',
@@ -238,9 +272,9 @@ const actions = [
   'SaveAsTemplate',
   'Scale',
   'Scissors',
+  'Search',
   'SelectAll',
   'SelectAllArtboards',
-  'SelectAllInArtboard',
   'SendToSymbolsPage',
   'Shape',
   'ShowBorderOptions',
@@ -253,23 +287,35 @@ const actions = [
   'ShowLayerList',
   'ShowLayerList',
   'ShowReplaceColorSheet',
+  'Sketch.MSAddComponent',
+  'Sketch.MSChangeComponentKindActionGroup',
+  'Sketch.MSChangeLayerStyleComponentKind',
+  'Sketch.MSChangeSwatchComponentKind',
+  'Sketch.MSChangeSymbolComponentKind',
+  'Sketch.MSChangeTextStyleComponentKind',
+  'Sketch.MSComponentsPicker',
+  'Sketch.MSContentMode',
   'Sketch.MSCopyComponent',
   'Sketch.MSDeleteComponent',
   'Sketch.MSDuplicateComponent',
   'Sketch.MSEditSymbolMasterComponent',
   'Sketch.MSFilterComponentList',
   'Sketch.MSGroupComponents',
+  'Sketch.MSInsertComponentInstance',
   'Sketch.MSMaintainScrollPosition',
   'Sketch.MSRenameComponent',
+  'Sketch.MSRenameSharedStyle',
   'Sketch.MSRevealComponent',
-  'Sketch.MSRevealComponentPane',
+  'Sketch.MSRevealComponentsPanel',
   'Sketch.MSTidy',
   'Sketch.MSUngroupComponents',
-  'Sketch.ToggleLibraryListInComponentsPane',
+  'Sketch.MSVisitSymbolComponent',
+  'Sketch.ToggleLibraryListInComponentsPanel',
   'SmartRotate',
   'StarShape',
   'Subtract',
   'SyncLibrary',
+  'SyncLocalColor',
   'SyncLocalStyle',
   'TextAlignTouchBarGroup',
   'TextOnPath',
@@ -312,7 +358,7 @@ const actions = [
   'ZoomOut',
   'ZoomToActualSize',
   'ZoomToArtboard',
-  'ZoomToSelection'
+  'ZoomToSelection',
 ]
 
 const fakeActions = [
@@ -335,13 +381,13 @@ const specialActions = ['Startup', 'Shutdown']
 
 const allActions = actions.concat(fakeActions).concat(specialActions)
 
-const actionsPath = path.join(__dirname, '../actions')
+const actionsPath = path.join(__dirname, '../_actions')
 
 if (!fs.existsSync(actionsPath)) {
   fs.mkdirSync(actionsPath)
 }
 
-allActions.forEach(action => {
+allActions.forEach((action) => {
   const actionPath = path.join(actionsPath, `${action}.md`)
   if (fs.existsSync(actionPath)) {
     return
@@ -350,14 +396,12 @@ allActions.forEach(action => {
     actionPath,
     `---
 title: ${action}
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ${action} action will appear here.
+No details available for \`${action}\`.
 `,
-    'utf8'
+    'utf8',
   )
   console.log(`Generated file for ${action}`)
 })

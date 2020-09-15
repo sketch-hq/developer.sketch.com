@@ -1,8 +1,6 @@
 ---
 title: Sketch.MSCopyComponent
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Sketch.MSCopyComponent action will appear here.
+No details available for `Sketch.MSCopyComponent`.

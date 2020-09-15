@@ -1,8 +1,6 @@
 ---
 title: AlignRight
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the AlignRight action will appear here.
+No details available for `AlignRight`.

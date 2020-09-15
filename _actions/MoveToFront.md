@@ -1,8 +1,6 @@
 ---
 title: MoveToFront
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the MoveToFront action will appear here.
+No details available for `MoveToFront`.

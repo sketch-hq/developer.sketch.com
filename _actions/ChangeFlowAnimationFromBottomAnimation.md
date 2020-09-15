@@ -1,8 +1,6 @@
 ---
 title: ChangeFlowAnimationFromBottomAnimation
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ChangeFlowAnimationFromBottomAnimation action will appear here.
+No details available for `ChangeFlowAnimationFromBottomAnimation`.

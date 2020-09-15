@@ -1,8 +1,6 @@
 ---
 title: ToggleRulers
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleRulers action will appear here.
+No details available for `ToggleRulers`.

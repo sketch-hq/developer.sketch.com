@@ -1,8 +1,6 @@
 ---
 title: LayerXFocus
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the LayerXFocus action will appear here.
+No details available for `LayerXFocus`.

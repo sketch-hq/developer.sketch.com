@@ -1,8 +1,6 @@
 ---
 title: ColorInspectorImageTab
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ColorInspectorImageTab action will appear here.
+No details available for `ColorInspectorImageTab`.

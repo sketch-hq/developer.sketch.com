@@ -1,8 +1,6 @@
 ---
 title: FlipHorizontal
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the FlipHorizontal action will appear here.
+No details available for `FlipHorizontal`.

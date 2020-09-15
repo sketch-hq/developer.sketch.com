@@ -1,8 +1,6 @@
 ---
 title: ColorInspectorModeFillTouchBarGroup
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ColorInspectorModeFillTouchBarGroup action will appear here.
+No details available for `ColorInspectorModeFillTouchBarGroup`.

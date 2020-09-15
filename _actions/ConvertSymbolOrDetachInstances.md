@@ -1,8 +1,6 @@
 ---
 title: ConvertSymbolOrDetachInstances
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ConvertSymbolOrDetachInstances action will appear here.
+No details available for `ConvertSymbolOrDetachInstances`.

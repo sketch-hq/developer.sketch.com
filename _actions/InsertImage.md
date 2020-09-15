@@ -1,8 +1,6 @@
 ---
 title: InsertImage
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the InsertImage action will appear here.
+No details available for `InsertImage`.

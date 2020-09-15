@@ -1,8 +1,6 @@
 ---
 title: Shape
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the Shape action will appear here.
+No details available for `Shape`.

@@ -1,8 +1,6 @@
 ---
 title: LicenseExpired
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the LicenseExpired action will appear here.
+No details available for `LicenseExpired`.

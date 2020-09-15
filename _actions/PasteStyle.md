@@ -1,8 +1,6 @@
 ---
 title: PasteStyle
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the PasteStyle action will appear here.
+No details available for `PasteStyle`.

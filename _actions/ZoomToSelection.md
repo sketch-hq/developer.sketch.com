@@ -1,8 +1,6 @@
 ---
 title: ZoomToSelection
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ZoomToSelection action will appear here.
+No details available for `ZoomToSelection`.

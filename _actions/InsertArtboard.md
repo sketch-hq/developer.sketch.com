@@ -1,8 +1,6 @@
 ---
 title: InsertArtboard
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the InsertArtboard action will appear here.
+No details available for `InsertArtboard`.

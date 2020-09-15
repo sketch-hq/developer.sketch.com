@@ -1,8 +1,6 @@
 ---
 title: ToggleArtboardShadow
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ToggleArtboardShadow action will appear here.
+No details available for `ToggleArtboardShadow`.

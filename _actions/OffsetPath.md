@@ -1,8 +1,6 @@
 ---
 title: OffsetPath
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the OffsetPath action will appear here.
+No details available for `OffsetPath`.

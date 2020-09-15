@@ -1,8 +1,6 @@
 ---
 title: ChangeInferredLayout
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ChangeInferredLayout action will appear here.
+No details available for `ChangeInferredLayout`.

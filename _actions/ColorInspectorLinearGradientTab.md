@@ -1,8 +1,6 @@
 ---
 title: ColorInspectorLinearGradientTab
-summary: work in progress
+summary:
 ---
 
-Work In Progress
-
-Documentation for the ColorInspectorLinearGradientTab action will appear here.
+No details available for `ColorInspectorLinearGradientTab`.

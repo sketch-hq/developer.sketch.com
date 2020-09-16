@@ -124,7 +124,7 @@ A special object passed in the context of the action to supply data when the ite
 | --- | --- |
 | id<span class="arg-type">string</span> | The name of the override. |
 | override<span class="arg-type">[Override](#override)</span> | The override whose value will replaced by the supplied data. |
-| symbolInstance<span class="arg-type">[SymbolInstance](#symbolinstance)</span> | The symbol instance that the override is on that will have the data replaced. |
+| symbolInstance<span class="arg-type">[SymbolInstance](#symbolinstance)</span> | The Symbol instance that the override is on that will have the data replaced. |
 
 ## Deregister your Data Suppliers
 

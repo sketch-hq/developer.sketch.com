@@ -29,14 +29,14 @@ Given a reference to a [SymbolMaster](#symbol-master) or [Group](#group) layer u
 Set the `smartLayout` value to `null` to remove the Smart Layout. This is the equivalent of selecting "None" in the Sketch Inspector.
 
 ```javascript
-symbolMaster.smartLayout = null
+symbol.smartLayout = null
 ```
 
 ## Trigger a smart layout
 
 ```javascript
 const SmartLayout = require('sketch').SmartLayout
-symbolMaster.smartLayout = SmartLayout.TopToBottom
+symbol.smartLayout = SmartLayout.TopToBottom
 symbolInstance.resizeWithSmartLayout()
 ```
 

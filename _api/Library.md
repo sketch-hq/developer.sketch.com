@@ -99,7 +99,7 @@ var symbolReferences = library.getImportableSymbolReferencesForDocument(
 )
 ```
 
-To import a symbol from a Library, do **not** access its Document and look for the SymbolMaster directly. Instead, get the [Symbol References](#importable-object) of the Library and use those to import them.
+To import a Symbol from a Library, do **not** access its Document and look for the Symbol Source directly. Instead, get the [Symbol References](#importable-object) of the Library and use those to import them.
 
 Those references depends on the document you want to import them into. For example if a document has already imported a symbol, it will reference the local version to keep all the instances in sync.
 

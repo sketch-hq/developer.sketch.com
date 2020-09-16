@@ -281,11 +281,11 @@ let myShape = new ShapePath({
 })
 ```
 
-### `selected` property and `getFrame` method have been added on an symbol override
+### `selected` property and `getFrame` method have been added on an Symbol override
 
 [_GitHub pull request_]({{ site.github_repo }}/pull/394)
 
-The frame of an override can be different than the frame of its affected Layer in case where the Symbol Instance has been scaled or, in the case of the example below, the text value is changed for the symbol instance resulting in a shorter frame.
+The frame of an override can be different than the frame of its affected Layer in case where the Symbol Instance has been scaled or, in the case of the example below, the text value is changed for the Symbol instance resulting in a shorter frame.
 
 #### Usage
 

@@ -108,7 +108,7 @@ console.log(myText.fragments)
 //     text: 'great enveloping cosmic dark.' } ]
 ```
 
-### `symbolMaster.getParentSymbolMaster` used to throw an error. It will now return `undefined`
+### `symbol.getParentSymbolMaster` used to throw an error. It will now return `undefined`
 
 [_GitHub pull request_]({{ site.github_repo }}/pull/487)
 

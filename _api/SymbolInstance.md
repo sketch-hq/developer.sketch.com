@@ -27,7 +27,7 @@ A [Symbol](https://sketch.com/docs/symbols/) instance. It is an instance of [Lay
 | transform.flippedVertically<span class="arg-type">boolean</span> | If the Symbol Instance is vertically flipped. |
 | style<span class="arg-type">[Style](#style)</span> | The style of the Symbol Instance. |
 | symbolId<span class="arg-type">string</span> | The unique ID of the Symbol that the instance and its master share. |
-| master<span class="arg-type">[SymbolMaster](#symbol-master)</span> | The Symbol master that the instance is linked to. |
+| master<span class="arg-type">[SymbolMaster](#symbol-master)</span> | The Symbol Source that the instance is linked to. |
 | overrides<span class="arg-type">[Override](#symbol-override)[]</span> | The array of the overrides to modify the instance. |
 
 ## Create a new Symbol Instance
@@ -39,13 +39,13 @@ var instance = new SymbolInstance({
 })
 ```
 
-## Create a new Symbol Instance from a Symbol Master
+## Create a new Symbol Instance from a Symbol Source
 
 ```javascript
-var instance = master.createNewInstance()
+var instance = symbol.createNewInstance()
 ```
 
-Creates a new [SymbolInstance](#symbol-instance) linked to this master, ready for inserting in the document.
+Creates a new [SymbolInstance](#symbol-instance) linked to this Source, ready for inserting in the document.
 
 ### Returns
 
@@ -61,7 +61,7 @@ var group = instance.detach({
 })
 ```
 
-Replaces a group that contains a copy of the Symbol this instance refers to. Returns `null` if the master contains no layers instead of inserting an empty group
+Replaces a group that contains a copy of the Symbol this instance refers to. Returns `null` if the Source contains no layers instead of inserting an empty group
 
 | Parameters |  |
 | --- | --- |

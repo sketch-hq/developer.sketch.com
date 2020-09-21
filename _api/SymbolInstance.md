@@ -27,7 +27,7 @@ A [Symbol](https://sketch.com/docs/symbols/) instance. It is an instance of [Lay
 | transform.flippedVertically<span class="arg-type">boolean</span> | If the Symbol Instance is vertically flipped. |
 | style<span class="arg-type">[Style](#style)</span> | The style of the Symbol Instance. |
 | symbolId<span class="arg-type">string</span> | The unique ID of the Symbol that the instance and its master share. |
-| master<span class="arg-type">[SymbolMaster](#symbol-master)</span> | The Symbol Source that the instance is linked to. |
+| master<span class="arg-type">[SymbolMaster](#symbol-source)</span> | The Symbol Source that the instance is linked to. |
 | overrides<span class="arg-type">[Override](#symbol-override)[]</span> | The array of the overrides to modify the instance. |
 
 ## Create a new Symbol Instance

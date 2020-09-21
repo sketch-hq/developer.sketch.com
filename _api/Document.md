@@ -161,7 +161,7 @@ A method to get all Symbol Sources defined in the document.
 
 ### Returns
 
-Return an array of the [SymbolMaster](#symbolmaster) objects defined in the document.
+Return an array of the [SymbolMaster](#symbol-source) objects defined in the document.
 
 ## Find a Symbol Source
 
@@ -177,7 +177,7 @@ A method to help find a Symbol Source in the document.
 
 ### Returns
 
-Return a [SymbolMaster](#symbolmaster) object or `undefined` if it's not found.
+Return a [SymbolMaster](#symbol-source) object or `undefined` if it's not found.
 
 ## Center on Layer
 
@@ -198,7 +198,7 @@ document.save()
 
 document.save('path/to/the/document.sketch')
 
-document.save('path/to/the/document.sketch', err => {
+document.save('path/to/the/document.sketch', (err) => {
   if (err) {
     // saving the document failed :(
   }

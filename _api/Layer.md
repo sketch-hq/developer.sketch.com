@@ -139,7 +139,7 @@ page.getParentPage() === undefined
 layer.getParentArtboard()
 artboard.getParentArtboard() === undefined
 
-// access the symbol master the layer is in (if any)
+// access the Symbol Source the layer is in (if any)
 layer.getParentSymbolMaster()
 symbolMaster.getParentSymbolMaster() === undefined
 

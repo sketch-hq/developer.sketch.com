@@ -20,7 +20,7 @@ A text layer. It is an instance of [Layer](#layer) so all the methods defined th
 | frame<span class="arg-type">[Rectangle](#rectangle)</span> | The frame of the Text. This is given in coordinates that are local to the parent of the layer. |
 | selected<span class="arg-type">boolean</span> | If the Text is selected. |
 | flow<span class="arg-type">[Flow](#flow)</span> | The prototyping action associated with the Text. |
-| exportFormats<span class="arg-type">[ExportFormat](#export-format)[]</span> | The export formats of the Symbol Master. |
+| exportFormats<span class="arg-type">[ExportFormat](#export-format)[]</span> | The export formats of the Symbol Source. |
 | transform<span class="arg-type">object</span> | The transformation applied to the Text. |
 | transform.rotation<span class="arg-type">number</span> | The rotation of the Text in degrees, clock-wise. |
 | transform.flippedHorizontally<span class="arg-type">boolean</span> | If the Text is horizontally flipped. |

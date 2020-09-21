@@ -365,7 +365,7 @@ export function layerResizedMethod(context) {
 // See https://developer.sketchapp.com/guides/action-api/ for more info
 ```
 
-### You can now control whether or not a property is `editable` for a Symbol Master override. Symbol instance overrides also have a property called `editabled`
+### You can now control whether or not a property is `editable` for a Symbol Source override. Symbol instance overrides also have a property called `editabled`
 
 [_GitHub pull request_]({{ site.github_repo }}/pull/323)
 
@@ -388,9 +388,9 @@ const text = new Text({
   parent: artboard,
 })
 
-const master = SymbolMaster.fromArtboard(artboard)
-master.overrides[0].editable = false
-const instance = master.createNewInstance()
+const symbol = SymbolMaster.fromArtboard(artboard)
+symbol.overrides[0].editable = false
+const instance = symbol.createNewInstance()
 instance.parent = document.selectedPage
 instance.overrides[0].editable
 // false

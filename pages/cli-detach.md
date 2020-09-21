@@ -5,10 +5,10 @@ chapter: Command-line interface
 permalink: /cli/detach
 
 order: 104
-excerpt: Detach all symbol and style instances within a Sketch document.
+excerpt: Detach all Symbol and style instances within a Sketch document.
 ---
 
-Turn every symbol and style instance in a Sketch document into their own self-contained layers and layer groups using `sketchtool detach`.
+Turn every Symbol and style instance in a Sketch document into their own self-contained layers and layer groups using `sketchtool detach`.
 
 ```sh
 sketchtool detach [--output=/path/to/detached.sketch] /path/to/document.sketch
@@ -30,7 +30,7 @@ Creates a self-contained Sketch document, applying and detaching:
 - [Library Styles](https://www.sketch.com/docs/libraries/library-styles)
 - [Library Symbols](https://www.sketch.com/docs/libraries/library-symbols)
 
-Detached Symbol Layers include custom data in `userInfo` for the `com.bohemiancoding.sketchtool.detach` key, describing what symbol the layer has previously been an instance of.
+Detached Symbol Layers include custom data in `userInfo` for the `com.bohemiancoding.sketchtool.detach` key, describing what Symbol the layer has previously been an instance of.
 
 ```json
 {

@@ -22,15 +22,15 @@ An Object that can imported from a [Library](#library). All its properties are r
 ## Import in the Document
 
 ```javascript
-var symbolMaster = symbolReference.import()
-var sharedStyle = sharedStyleReference.import()
+var symbol = symbolReference.import()
+var style = sharedStyleReference.import()
 ```
 
 An Importable Object is linked to a Document so importing it will import it in the said Document.
 
 ### Returns
 
-If the `objectType` of the Object is `Symbol`, it will return a [Symbol Master](#symbol-master) which will be linked to the Library (meaning that if the Library is updated, the [Symbol Instances](#symbol-instance) created from the Master will be updated as well).
+If the `objectType` of the Object is `Symbol`, it will return a [Symbol Source](#symbol-source) which will be linked to the Library (meaning that if the Library is updated, the [Symbol Instances](#symbol-instance) created from the Source will be updated as well).
 
 ## `Library.ImportableObjectType`
 

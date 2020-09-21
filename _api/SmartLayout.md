@@ -4,7 +4,7 @@ order: 215
 section: models
 ---
 
-The [SmartLayout](#smartlayout) object contains the set of possible Smart Layouts that can be applied to [SymbolMaster](#symbol-master) and [Group](#group) layers.
+The [SmartLayout](#smartlayout) object contains the set of possible Smart Layouts that can be applied to [SymbolMaster](#symbol-source) and [Group](#group) layers.
 
 | Properties         |                                                     |
 | ------------------ | --------------------------------------------------- |
@@ -22,21 +22,21 @@ const SmartLayout = require('sketch').SmartLayout
 layer.smartLayout = SmartLayout.TopToBottom
 ```
 
-Given a reference to a [SymbolMaster](#symbol-master) or [Group](#group) layer use the `smartLayout` setter to apply one of the Smart Layout values.
+Given a reference to a [SymbolMaster](#symbol-source) or [Group](#group) layer use the `smartLayout` setter to apply one of the Smart Layout values.
 
 ## Clear a Smart Layout
 
 Set the `smartLayout` value to `null` to remove the Smart Layout. This is the equivalent of selecting "None" in the Sketch Inspector.
 
 ```javascript
-symbolMaster.smartLayout = null
+symbol.smartLayout = null
 ```
 
 ## Trigger a smart layout
 
 ```javascript
 const SmartLayout = require('sketch').SmartLayout
-symbolMaster.smartLayout = SmartLayout.TopToBottom
+symbol.smartLayout = SmartLayout.TopToBottom
 symbolInstance.resizeWithSmartLayout()
 ```
 

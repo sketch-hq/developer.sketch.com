@@ -4,7 +4,7 @@ section: plugins
 chapter: JavaScript API Updates
 permalink: /plugins/updates/new-in-sketch-67
 
-order: 493
+order: 492
 excerpt: Summary of the public API changes introduced with Sketch 67
 ---
 

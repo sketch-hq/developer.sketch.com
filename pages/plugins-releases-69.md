@@ -16,7 +16,7 @@ Released 29 September, 2020 – [_read release notes_](https://www.sketch.com/up
 
 Sketch 69 introduces a new [Color Variables feature](https://www.sketch.com/blog/2020/08/31/components-management-color-variables-and-linked-data-what-s-in-the-69-beta/).
 
-Color Variables replace the previously existing `colors` object in `Document` with a new one: `swatches`. It is an array of Color Variables (internally referred to as _Swatches_) which you can modify directly.
+Color Variables replace the previously existing `colors` object in `Document` with a new one: `swatches`. It is an array of Color Variables, internally referred to as _Swatches_, which you can modify directly.
 
 This example generates 100 random swatches and adds them to the current document:
 
@@ -77,4 +77,3 @@ For more details about the API, check the documentation for [`Swatch`](/referenc
 - [API reference](/reference/api)
 - [Color Variables Migrator plugin](https://github.com/sketch-hq/color-variables-migrator)
 - [New in Sketch 67](/plugins/updates/new-in-sketch-67)
-

@@ -45,3 +45,4 @@ Enumeration of the types of Importable Objects.
 | `Symbol`     |
 | `LayerStyle` |
 | `TextStyle`  |
+| `Swatch`  |

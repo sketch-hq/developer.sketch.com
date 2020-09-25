@@ -20,6 +20,7 @@ A Sketch document.
 | sharedLayerStyles<span class="arg-type">[SharedStyle](#shared-style)[]</span> | The list of all shared layer styles defined in the document. |
 | sharedTextStyles<span class="arg-type">[SharedStyle](#shared-style)[]</span> | The list of all shared text styles defined in the document. |
 | colors<span class="arg-type">[ColorAsset](#color-asset)[]</span> | A list of color assets defined in the document. Mutating the returned array will update the document colors. |
+| swatches<span class="arg-type">[Swatch](#swatch)[]</span> | A list of swatches defined in the document. Mutating the returned array will update the document swatches. |
 | gradients<span class="arg-type">[GradientAsset](#gradient-asset)[]</span> | A list of gradient assets defined in the document. Mutating the returned array will update the document gradients. |
 | colorSpace<span class="arg-type">[ColorSpace](#documentcolorspace)</span> | The color space of the document. |
 

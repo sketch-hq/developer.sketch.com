@@ -22,3 +22,4 @@ All of the features of API v1.0 are present in v2.0, except `api.resourceNamed()
 
 - [API reference](/reference/api)
 - [New in Sketch 64](/plugins/updates/new-in-sketch-64)
+- [New in Sketch 67](/plugins/updates/new-in-sketch-67)

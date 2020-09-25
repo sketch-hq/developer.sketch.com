@@ -10,7 +10,7 @@ var symbolReferences = library.getImportableSymbolReferencesForDocument(
 )
 ```
 
-An Object that can imported from a [Library](#library). All its properties are read-only.
+An Object that can be imported from a [Library](#library). All its properties are read-only.
 
 | Properties |  |
 | --- | --- |
@@ -45,3 +45,4 @@ Enumeration of the types of Importable Objects.
 | `Symbol`     |
 | `LayerStyle` |
 | `TextStyle`  |
+| `Swatch`  |

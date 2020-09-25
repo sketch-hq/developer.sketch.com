@@ -41,7 +41,7 @@ function generateHex() {
 }
 ```
 
-To use a Color Variable on a Layer or Style (or anywhere the API expects a Color), you use the `referencingColor` attribute on the Swatch:
+To use a Color Variable on a Layer, Style or any API expecting a Color, use the Swatch's `referencingColor` attribute:
 
 ```js
 const mySwatch = Swatch.from({

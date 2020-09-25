@@ -61,14 +61,16 @@ const Library = sketch.Library
 
 const doc = sketch.getSelectedDocument()
 
-const colorLibrary = Library.getLibraryForDocumentAtPath('shared-color-variables.sketch')
-const importableSwatches = colorLibrary.getImportableSwatchReferencesForDocument(doc)
+const lib = Library.getLibraryForDocumentAtPath(
+  'shared-color-variables.sketch'
+)
+const importableSwatches = lib.getImportableSwatchReferencesForDocument(doc)
 const importedSwatch = importableSwatches[0].import()
 
 textLayer.style.textColor = importedSwatch.referencingColor
 ```
 
-For more details about the API, check the documentation in `Swatch`, `Document`, and `Library`.
+For more details about the API, check the documentation for [`Swatch`](/reference/api/#swatch), [`Document`](/reference/api/#document), and [`Library`](/reference/api/#library).
 
 ## Related resources
 

@@ -48,6 +48,7 @@ const mySwatch = Swatch.from({
   name: 'Safety Orange',
   color: '#ff6600'
 })
+doc.swatches.push(mySwatch) // Add Swatch to document before using
 textLayer.style.textColor = mySwatch.referencingColor
 ```
 

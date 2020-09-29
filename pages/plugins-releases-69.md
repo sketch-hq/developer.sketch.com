@@ -14,7 +14,7 @@ Released 29 September, 2020 – [_read release notes_](https://www.sketch.com/up
 
 ### Color Variables API
 
-Sketch 69 introduces a new [Color Variables feature](https://www.sketch.com/blog/2020/09/30/color-variables-components-view-and-a-new-insert-window-what-s-new-in-sketch/).
+Sketch 69 introduces a new [Color Variables feature](https://www.sketch.com/blog/2020/10/01/color-variables-components-view-and-a-new-insert-window-what-s-new-in-sketch/).
 
 Color Variables replace the previously existing `colors` object in `Document` with a new one: `swatches`. It is an array of Color Variables, internally referred to as _Swatches_, which you can modify directly.
 

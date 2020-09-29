@@ -28,16 +28,16 @@ const doc = sketch.getSelectedDocument()
 for (var i = 0; i < 100; i++) {
   const randomColor = generateHex()
   const swatch = Swatch.from({
-    name: `Rainbow ${i+1}`,
-    color: randomColor
+    name: `Rainbow ${i + 1}`,
+    color: randomColor,
   })
   doc.swatches.push(swatch)
 }
 
 function generateHex() {
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  var hexColor = "#" + randomColor;
-  return hexColor;
+  var randomColor = Math.floor(Math.random() * 16777215).toString(16)
+  var hexColor = '#' + randomColor
+  return hexColor
 }
 ```
 
@@ -46,7 +46,7 @@ To use a Color Variable on a Layer, Style or any API expecting a Color, use the 
 ```js
 const mySwatch = Swatch.from({
   name: 'Safety Orange',
-  color: '#ff6600'
+  color: '#ff6600',
 })
 doc.swatches.push(mySwatch) // Add Swatch to document before using
 textLayer.style.textColor = mySwatch.referencingColor

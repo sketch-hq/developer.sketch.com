@@ -41,7 +41,7 @@ Export an object, using the options supplied.
 | objectToExport<span class="arg-type">[Layer](#layer) / [Layer](#layer)[] / [Page](#page) / [Page](#page)[]</span> | The object to export. |
 | options<span class="arg-type">object</span> | Options indicating which sizes and formats to use, etc.. |
 | options.output<span class="arg-type">string</span> | this is the path of the folder where all exported files are placed (defaults to `"~/Documents/Sketch Exports"`). If falsey, the data for the objects are returned immediately. |
-| options.formats<span class="arg-type">string</span> | Comma separated list of formats to export to (`png`, `jpg`, `svg`, `json` or `pdf`) (default to `"png"`). |
+| options.formats<span class="arg-type">string</span> | Comma separated list of formats to export to (`png`, `jpg`, `webp`, `tiff`, `svg`, `eps`, `pdf` or `json`) (default to `"png"`). |
 | options.scales<span class="arg-type">string</span> | Comma separated list of scales which determine the sizes at which the layers are exported (defaults to `"1"`). |
 | options['use-id-for-name']<span class="arg-type">boolean</span> | Name exported images using their id rather than their name (defaults to `false`). |
 | options['group-contents-only']<span class="arg-type">boolean</span> | Export only layers that are contained within the group (default to `false`). |

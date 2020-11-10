@@ -29,15 +29,14 @@ sass:
   style: compressed
 
 exclude:
-  - node_modules
-  - gulpfile.js
-  - package.json
   - .sass-cache
   - README.md
-  - CNAME
   - Gemfile
   - Gemfile.lock
-  - DEVNOTES.md
+  - build.sh
+  - generate.sh
+  - serve.sh
+  - netlify.toml
 
 # Dynamic Content
 collections:

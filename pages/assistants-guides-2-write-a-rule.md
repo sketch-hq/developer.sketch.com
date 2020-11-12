@@ -67,7 +67,7 @@ async (context) => {
 }
 ```
 
-For the vast majority of cases you'll be able to implement your rule just using the [API](/assistants/api) passed in via the `context` argument. You aren't limited to this API though, feel free to use helper functions, npm modules or anything else you need to get the job done.
+For the vast majority of cases you'll be able to implement your rule just using the [API](/assistants/type-reference#rulecontext) passed in via the `context` argument. You aren't limited to this API though, feel free to use helper functions, npm modules or anything else you need to get the job done.
 
 Let's add the logic for disallowing _lorem ipsum_ in text layers. We'll do this in a standard _iterate, test, report_ pattern that's applicable to many rules:
 

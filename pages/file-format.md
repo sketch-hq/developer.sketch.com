@@ -77,6 +77,4 @@ settings.setLayerSettingForKey(layer, 'comment', 'Looking great 👏')
 
 - [JSON Schema specification](https://github.com/sketch-hq/sketch-file-format)
 - [TypeScript types](https://github.com/sketch-hq/sketch-file-format-ts)
-- [Reference files](https://github.com/sketch-hq/sketch-reference-files)
-- [sketch-file JavaScript package](https://github.com/mathieudutour/sketch-file)
 - Render [React components to Sketch](https://github.com/airbnb/react-sketchapp)

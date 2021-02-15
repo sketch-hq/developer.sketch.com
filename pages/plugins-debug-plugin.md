@@ -86,13 +86,15 @@ By default, Sketch caches plugins for performance reasons. Changes to plugins ar
 defaults write com.bohemiancoding.sketch3 AlwaysReloadScript -bool YES
 ```
 
+> **Note:** If you're using `skpm`, the `AlwaysReloadScript` user default will be set to `YES` automatically.
+
 Sketch only reloads a plugin directly before it gets invoked. For scripts using a long-running JavaScript context Sketch must be restarted. If you are still using `coscript.setShouldKeepAround(false)` we encourage you to instead use [`fibers`](https://developer.sketch.com/reference/api/#async) which provide more granular control over the lifecycle of a JavaScript context.
 
-> **Note:** If you're using `skpm`, the `AlwaysReloadScript` user default will be set to `YES` automatically.
+> **Note:** If you're using `skpm/sketch-module-web-view`, web views will be persisted on a background thread so you can communicate with them from your plugin (and others) without blocking Sketch. The `AlwaysReloadScript` option won't reload the environment in this case, and you'll need to close and relaunch Sketch. See the next section for a way to automate this.
 
 ### Automatically restart Sketch after plugin changes
 
-If your plugin uses a long-running JavaScript context it can be useful during development to restart Sketch every time a change is made. This can be done automatically using the Unix utility [`entr`](http://entrproject.org).
+If your plugin uses a long-running JavaScript context (or if you're using a webview for your UI) it can be useful during development to restart Sketch every time a change is made. This can be done automatically using the Unix utility [`entr`](http://entrproject.org).
 
 Install `entr` manually or using Homebrew.
 

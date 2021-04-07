@@ -23,7 +23,7 @@ Assistants…
 
 One of the fundamentals of Assistants is that they are defined per document. You can use certain Assistants with one document and others with another, for instance to work on multiple projects for different brands and respect their individual guidelines.
 
-> Documents specify Assistants as [dependencies](https://github.com/sketch-hq/sketch-file-format/blob/master/schema/objects/assistants-workspace.schema.yaml) in `*.sketch/workspace/assistants.json` similar to [JavaScript packages](https://docs.npmjs.com/files/package.json#dependencies). Sketch asks the user for permission to download missing Assistants when a document is checked and the specified version of an Assistant cannot be found locally.
+> Documents specify Assistants as dependencies in `*.sketch/workspace/assistants.json` similar to [JavaScript packages](https://docs.npmjs.com/files/package.json#dependencies). Sketch asks the user for permission to download missing Assistants when a document is checked and the specified version of an Assistant cannot be found locally.
 
 ## Create and publish Assistants
 

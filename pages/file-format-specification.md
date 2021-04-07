@@ -15,12 +15,12 @@ Use the specification to build robust low level integrations of Sketch such as s
 
 ### JSON Schema
 
-The core specification is published as JSON Schema from the [sketch-file-format](https://github.com/sketch-hq/sketch-file-format) package.
+The core specification is published as JSON Schema from the [sketch-file-format](https://github.com/sketch-hq/sketch-document/tree/main/packages/file-format) package.
 
 Use the JSON Schema to generate types, GraphQL schemas and model code or validate Sketch documents you create and manipulate programmatically.
 
 ### TypeScript
 
-The TypeScript types are generated automatically from the JSON Schema, and published via the [sketch-file-format-ts](https://github.com/sketch-hq/sketch-file-format-ts) package.
+The TypeScript types are generated automatically from the JSON Schema, and published via the [sketch-file-format-ts](https://github.com/sketch-hq/sketch-document/tree/main/packages/file-format-ts) package.
 
 Use the types to strongly type data representing Sketch document objects, such as layers and artboards in TypeScript projects.

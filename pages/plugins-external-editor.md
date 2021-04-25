@@ -10,8 +10,13 @@ excerpt: Use your favourite text editor, such as Atom or Visual Studio Code, to 
 
 Use your favourite text editor, such as [Atom](https://atom.io) or [Visual Studio Code](https://code.visualstudio.com), to write Sketch plugins by setting a user default on the command-line.
 
+For Visual Studio use:
 ```shell
 defaults write com.bohemiancoding.sketch3 "Plugin Editor" "/usr/local/bin/code"
+```
+For Atom use:
+```shell
+defaults write com.bohemiancoding.sketch3 "Plugin Editor" "/usr/local/bin/atom"
 ```
 
 **Note:** Restart Sketch for the changes to take effect.

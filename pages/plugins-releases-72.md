@@ -12,7 +12,7 @@ Released 5 May, 2021 – [_read release notes_](https://www.sketch.com/updates/#
 
 ## Changes
 
-The internal class `MSApplicationMetadata` has been refactoring into a new class, `BCSketchInfo`.
+The internal class `MSApplicationMetadata` has been refactored into a new class, `BCSketchInfo`.
 
 If a plugin was relying on any of the internal methods in `MSApplicationMetadata`, its code will not work (and may even crash Sketch if it’s passing the returned value unchecked to other parts of its code). The methods that previously lived in `MSApplicationMetadata` have been replaced with methods in `BCSketchInfo.shared()`, and most of the metadata you may need is available directly as a dictionary in `BCSketchInfo.shared().metadata()`.
 

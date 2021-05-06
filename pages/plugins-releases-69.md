@@ -78,3 +78,4 @@ For more details about the API, check the documentation for [`Swatch`](/referenc
 - [API reference](/reference/api)
 - [Color Variables Migrator plugin](https://github.com/sketch-hq/color-variables-migrator)
 - [New in Sketch 67](/plugins/updates/new-in-sketch-67)
+- [New in Sketch 71](/plugins/updates/new-in-sketch-71)

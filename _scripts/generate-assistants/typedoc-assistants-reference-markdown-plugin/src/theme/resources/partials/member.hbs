@@ -1,0 +1,15 @@
+{{#unless hasOwnDocument}}
+
+{{#if name}}
+
+
+<h3 id="{{escape name}}">
+  <a id="{{anchor}}" name="{{this.anchor}}"></a>{{escape name}}
+  <span class="source-link" markdown="1">{{showSourceLink}}</span>
+</h3>
+
+{{/if}}
+
+{{/unless}}
+
+{{> member.main }}

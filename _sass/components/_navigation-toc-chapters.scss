@@ -1,0 +1,38 @@
+.toc-nav li.chapter-group > .group-title {
+  color: inherit;
+  margin-block-start: unset;
+}
+
+
+.toc-nav li.chapter-group > input[name="group-collapse"] {
+  display: none;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-nav li.chapter-group > .group-title > label {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.toc-nav li.chapter-group > ol.group-list {
+  overflow: hidden;
+  max-height: 0px;
+  position: relative;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.toc-nav li.chapter-group > ol.group-list > li {
+  font-weight: normal;
+}
+
+.toc-nav li.chapter-group > input[name="group-collapse"]:checked ~ .group-list {
+  max-height: 1500px;
+  transition: max-height 0.25s ease-in-out;
+}

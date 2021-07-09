@@ -30,6 +30,9 @@ sass:
 
 exclude:
   - .sass-cache
+  - _deps/
+  - _scripts/
+  - node_modules
   - README.md
   - Gemfile
   - Gemfile.lock
@@ -37,6 +40,7 @@ exclude:
   - generate.sh
   - serve.sh
   - netlify.toml
+  - package.json
 
 # Dynamic Content
 collections:

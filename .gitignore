@@ -8,3 +8,5 @@ node_modules
 .jekyll-cache
 .bundle
 _vendor
+_deps
+_assistants

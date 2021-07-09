@@ -1,0 +1,19 @@
+{{#if getSignature}}
+
+{{#with getSignature}}
+
+{{> member.signature accessor="get" showSources=false }}
+
+{{/with}}
+
+{{/if}}
+
+{{#if setSignature}}
+
+{{#with setSignature}}
+
+{{> member.signature accessor="set" showSources=false }}
+
+{{/with}}
+
+{{/if}}

@@ -1,0 +1,12 @@
+{{#each children}}
+{{#unless hasOwnDocument}}
+
+{{#if name}}
+
+<p class="enum-member" markdown="1">{{ escape name }}</p>
+
+{{/if}}
+
+
+{{/unless}}
+{{/each}}

@@ -22,48 +22,32 @@ layout: base
 
           {% assign all_chapters = site.pages | where: "section", page.section | sort: "order" | map: "chapter" | uniq %}
 
-          <ol>
-
             {% comment %}
             The Actions API lists all actions in the sidebar. All other pages
             list their sections and chapters.
             {% endcomment %}
 
             {% if page.url contains '/reference/action/' %}
-            <li>
-              <h5><a href="/reference/action/">Actions Index</a></h5>
-              <ol>
-                {% assign actions = site.actions | sort:"title"%}
-                {% for action in actions %}
-                <li><a href="{{action.url}}" {% if page.url == action.url %} class="active"
-                    {% endif %}>{{ action.title }}</a></li>
-                {% endfor %}
-              </ol>
-            </li>
+            <ol>
+              <li>
+                <h5><a href="/reference/action/">Actions Index</a></h5>
+                <ol>
+                  {% assign actions = site.actions | sort:"title"%}
+                  {% for action in actions %}
+                  <li><a href="{{action.url}}" {% if page.url==action.url %} class="active" {% endif %}>{{ action.title
+                      }}</a></li>
+                  {% endfor %}
+                </ol>
+              </li>
+            </ol>
 
             {% else %}
 
-            {% for chapter in all_chapters %}
-            {% if chapter == nil %}{% continue %}{% endif %}
-            <li>
-              <h5>{{ chapter }}</h5>
-              <ol>
-                {% assign all_subpages = site.pages | where: "section", page.section | where: "chapter", chapter | sort: "order" %}
-                {% for subpage in all_subpages %}
-                <li>
-                  <a href="{{subpage.url}}" title="{{subpage.title}}" {% if page.url == subpage.url %} class="active"
-                    {% endif %}>
-                    {{subpage.title}}
-                  </a>
-                </li>
-                {% endfor %}
-              </ol>
-            </li>
-            {% endfor %}
+            {% assign pages = site.pages | where: "section", page.section %}
+            {% include nav-chapters.html chapters=all_chapters prefix='' group='' section=page.section pages=pages %}
+
 
             {% endif %}
-
-          </ol>
         </nav>
       </aside>
 

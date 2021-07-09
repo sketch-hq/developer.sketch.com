@@ -5,6 +5,10 @@
     background-color: $background-light-base;
   }
 
+  body > section.sidebar {
+    overflow: visible;
+  }
+
   body > * {
     padding: 0 2rem;
   }

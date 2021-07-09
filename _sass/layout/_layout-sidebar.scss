@@ -35,6 +35,10 @@
   transform: scaleX(-1); //Flipping, as this char doesn't exist that way
 }
 
+.content .source-link {
+  line-height: 1;
+}
+
 .sidebar .sketch-news-learn h2 a::after {
   content: none !important;
 }
@@ -47,6 +51,10 @@
 
   .sidebar aside {
     min-width: 13rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
   }
 
   .sidebar .content {

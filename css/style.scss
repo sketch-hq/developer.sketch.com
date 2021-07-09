@@ -41,6 +41,7 @@
 @import 'layout/layout-sidebar';
 @import 'helpers/syntax-highlighting'; // !We might decide to use this elsewhere
 @import 'components/navigation-toc';
+@import 'components/navigation-toc-chapters';
 @import 'components/sticky-sidebar-nav';
 @import 'components/pagination';
 
@@ -48,6 +49,7 @@
 @import 'pages/home';
 @import 'pages/developer';
 @import 'pages/blog';
+@import 'pages/assistants';
 
 // API help
 @import 'pages/api';

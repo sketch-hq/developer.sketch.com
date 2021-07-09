@@ -1,0 +1,41 @@
+{{#if signatures}}
+
+{{#each signatures}}
+
+{{> member.signature showSources=false }}
+
+{{/each}}
+
+{{else}}
+
+{{#if hasGetterOrSetter}}
+
+{{> member.getterSetter}}
+
+{{else}}
+
+{{#if isReference}}
+
+{{!> member.reference}}
+{{#with tryGetTargetReflectionDeep}}
+{{> member.main }}
+{{/with}}
+
+{{else}}
+
+
+{{> member.declaration showSources=false }}
+
+
+{{#ifIsEnumeration}}
+#### Enumeration members
+
+{{> member.enum }}
+{{/ifIsEnumeration}}
+
+
+{{/if}}
+
+{{/if}}
+
+{{/if}}

@@ -1,0 +1,25 @@
+{
+  "name": "generate-assistants",
+  "version": "1.0.0",
+  "description": "This is the respository for the [developer.sketch.com](https://developer.sketch.com) website. This content was previously available in the [SketchAPI](https://github.com/sketch-hq/SketchAPI) repository.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-markdown": "^3.8.1",
+    "typedoc-assistants-reference-markdown-plugin": "file:./typedoc-assistants-reference-markdown-plugin"
+  },
+  "scripts": {
+    "build-docs": "_scripts/generate-assistants/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sketch-hq/developer.sketch.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sketch-hq/developer.sketch.com/issues"
+  },
+  "homepage": "https://github.com/sketch-hq/developer.sketch.com#readme"
+}
